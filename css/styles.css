@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+}
+
+p{
+    font-family: 'Playfair Display', serif; 
 }

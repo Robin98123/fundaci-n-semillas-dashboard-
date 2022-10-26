@@ -24,7 +24,7 @@ body{
     background: var(--body-color);
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Dosis', sans-serif;
 }
 
@@ -86,7 +86,16 @@ p{
     color: var(--white);
 }
 
+
+/*----------------------------*/
+
+.student_resume{
+    display: grid;
+    gap:15px;
+}
+
 /*---------card student------*/
+
 .card_student h1, .card_student h3, .layer_text{
     font-family: 'Dosis', sans-serif;
 }
@@ -97,17 +106,30 @@ p{
     padding: 10px;
 }
 
-.card_student .profile_image{
-    width: 90%;
-    max-width: 100px;
+.profile{
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 110px;
     margin: auto;
 }
 
-.card_student .profile_image::before{
-    content: '';
+.profile p{
     width: 10px;
     height: 10px;
     background: #00FF0A;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    position: absolute;
+    bottom: 12px;
+    right:8px;
+}
+
+.card_student .profile_image{
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
 }
 
 .other_students{
@@ -147,6 +169,7 @@ p{
 .information_student{
     display: grid;
     grid-template-columns: 30% 70%;
+    gap: 15px;
     align-items: center;
     line-height: 1.5;
 }
@@ -159,6 +182,148 @@ p{
     text-decoration: none;
     color: var(--green-darker);
     border-bottom: 1px solid var(--green-darker);
+}
+
+/*progress bar*/
+
+.progress-bar{
+    background: var(--white);
+    padding: 15px;
+    border-radius: var(--border-radius-cards);
+}
+
+.circular_progress_barr{
+    display: flex;
+    position: relative;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.circle-bar {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    width: 150px;
+    height: 150px;
+    background: #EAEAEA;
+    border-radius: 50%;
+    transform: scaleX(-1);
+    overflow: hidden;
+}
+
+.circle-bar .circle .mask,
+.circle-bar .circle .fill-group{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-bar-individual{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 20px;
+}
+
+.circle-bar .fill-individual{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-bar-individual .circle .mask{
+    width: 110px;
+    height: 110px;
+}
+
+.circle-bar .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-bar-individual .circle .mask {
+    clip: rect(0px, 110px, 110px, 55px);
+}
+
+.circle-bar .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #ffffff;
+    line-height: 120px;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+.circle-bar-individual .inside-circle{
+    width: 84px;
+    height: 84px;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+
+/* color animation */
+
+.mask .fill-individual {
+    clip: rect(0px, 55px, 110px, 0px);
+    background-color: #29ABE2;
+}
+
+.mask.full-individual,
+.circle .fill-individual {
+    animation: fill-individual ease-in-out 3s;
+    transform: rotate(93deg);
+}
+
+@keyframes fill-individual {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(93deg);
+    }
+}
+
+/* second bar */
+
+.mask .fill-group {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #FBB03B;
+}
+
+.mask.full-group,
+.circle .fill-group {
+    animation: fill-group ease-in-out 3s;
+    transform: rotate(135deg);
+}
+
+@keyframes fill-group{
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(135deg);
+    }
+}
+
+.statistics{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.statistics h3:first-of-type span{
+    color: #FBB03B;
+}
+
+.statistics span{
+    color:#29ABE2;
 }
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/

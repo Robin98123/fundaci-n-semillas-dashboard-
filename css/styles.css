@@ -4,10 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+:root{
+    --green-darker:#009458;
+    --green-light:#69BF97;
+    --white: #FFFFFF;
+
+    --body-color:#F3F3F3;
+
+    --border-radius-cards:15px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+
+body{
+    background: var(--body-color);
 }
 
 h1 {
@@ -24,6 +38,128 @@ p{
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
+
+.filters, .student_resume{
+    width: 95%;
+    margin: 15px auto;
+}
+
+.filters{
+    display: grid;
+    grid-template-columns: 100%;
+    gap:10px;
+    --border-radius-filter:5px;
+}
+
+.filters .student, .filters select{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    border-radius: var(--border-radius-filter);
+}
+
+.selectors{
+    display: grid;
+    grid-template-columns: 62% 34.5%;
+    gap: 10px;
+}
+
+.filters .student{
+    background-color: var(--green-light);
+}
+
+.selectors select{
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+    font-weight: bold;
+}
+
+.selectors .diplomat{
+    color: var(--green-darker);
+}
+
+.selectors .module{
+    background: var(--green-darker);
+    color: var(--white);
+}
+
+/*---------card student------*/
+.card_student h1, .card_student h3, .layer_text{
+    font-family: 'Dosis', sans-serif;
+}
+
+.card_student{
+    background: var(--white);
+    border-radius: var(--border-radius-cards);
+    padding: 10px;
+}
+
+.card_student .profile_image{
+    width: 90%;
+    max-width: 100px;
+    margin: auto;
+}
+
+.card_student .profile_image::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #00FF0A;
+}
+
+.other_students{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    position: relative;
+    max-height: 70px;
+}
+
+.other_students img{
+    max-width: 70px;
+    max-height: 50px;
+    margin-left:-25px;
+}
+
+.card_student img{
+    border-radius: 50%;
+    border:5px solid var(--white)
+}
+
+.layer_text{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    color: var(--white);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information_student{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.information_student h3{
+    font-size: 21px;
+}
+
+.information_student a{
+    text-decoration: none;
+    color: var(--green-darker);
+    border-bottom: 1px solid var(--green-darker);
+}
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
 

@@ -19,9 +19,375 @@ p{
 }
 
 
+
 /*sección 1. barra de navegación lateral/ Felipe*/
 
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
+
+
+.elementos_header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 760px) {
+    .barra-buscador{
+        display: none;
+    }
+}
+
+.barra-buscador{
+    margin-top: 3rem;
+}
+
+            #input-buscador{
+                background-color: transparent;
+                position: absolute;
+                font-family: 'Dosis', sans-serif;
+                font-size: 20px;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 3.5rem;
+                border-radius: 12px;
+                border-color: transparent;
+                width: 550px;
+                outline: 2px solid rgb(192, 192, 192);
+            }
+
+            .lupa-buscador{
+                position: relative;
+                padding-top: 8px;
+                padding-left: 8px;
+            }
+
+            .lupa-buscador-mira{
+                width: 20px;
+                height: 20px;
+                background-color:transparent ;
+                border-radius: 50%;
+                border: 3px solid rgb(192, 192, 192);
+                position: relative;
+            }
+
+            .lupa-buscador-mango{
+                width: 3px;
+                height: 9px;
+                background-color: rgb(192, 192, 192);
+                border-radius: 0px 0px 5px 5px;
+                transform: rotate(-35deg);
+                margin-left: 22px;
+                margin-top: -3px;
+                position: relative;
+            }
+
+.iconos{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 760px) {
+.campana, .bandeja-correos, .piñon_completo{
+    display: none;
+}
+.nav-superior{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+    /*Icono_campana*/
+
+    .circulo-campana_1{
+        margin-top: 14px;
+        margin-left: 2px;
+        height: 10px;
+        width: 10px;
+        background-color: #919191;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .circulo-campana_2{
+        margin-top: 15px;
+        margin-left: 3.5px;
+        height: 6px;
+        width: 6px;
+        background-color: #ffffff;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .base-campana{
+        width: 22px;
+        height: 6px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        margin-top: -5px;
+        margin-left: -4px;
+    }
+
+    .cupula-campana{
+        width: 16px;
+        height: 18px;
+        background-color: #919191;
+        position: relative;
+        border-radius: 7px 7px 0px 0px;
+        margin-top: -22px;
+        margin-left: -1px;
+    }
+
+    .bandeja-correos_base{
+        width: 20px;
+        background-color: transparent;
+        border-radius: 9px 9px 0px 0px;
+        border-top: solid  transparent 0px;
+        border-left: solid transparent 3px;
+        border-right: solid transparent 3px;
+        border-bottom: solid #919191 13px;
+        position: absolute;
+    }
+    
+    .bandeja-correos_1{
+        width: 8px;
+        margin-top: 3px;
+        margin-left: 3.8px;
+        background-color: transparent;
+        border-radius: 9px 9px 0px 0px;
+        border-top: solid  transparent 0px;
+        border-left: solid transparent 5px;
+        border-right: solid transparent 5px;
+        border-bottom: solid rgb(255, 255, 255) 10px;
+        position: relative;
+    }
+    
+    .bandeja-correos_cuadrado1{
+        width: 26px;
+        height: 10px;
+        background-color: #919191;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+    }
+    
+    .bandeja-correos_cuadrado2{
+        width: 8px;
+        height: 7px;
+        margin-top: -11px;
+        margin-left: 8.6px;
+        background-color: #ffffff;
+        border-radius: 0px 0px 2px 2px;
+        position: relative;
+    }
+    
+
+    /*Icono_piñon*/
+
+    .piñon_completo{
+        margin-top: -5px;
+    }
+
+    .carita_feliz{
+        height: 20px;
+        width: 20px;
+        background-color: #919191;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 3px;
+    }
+
+    .piñon_1{
+        margin-left: 5px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+    }
+
+    .piñon_2{
+        margin-left: 13px;
+        margin-top: -5px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        transform: rotate(60deg);
+    }
+
+    .piñon_3{
+        margin-left: 13px;
+        margin-top: -1px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        transform: rotate(120deg);
+    }
+
+    .piñon_4{
+        margin-left: 5.5px;
+        margin-top: -4px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        transform: rotate(180deg);
+    }
+
+    .piñon_5{
+        margin-left: -2px;
+        margin-top: -13px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        transform: rotate(240deg);
+    }
+
+    .piñon_6{
+        margin-left: -3px;
+        margin-top: -18px;
+        height: 9px;
+        width: 10px;
+        background-color: #919191;
+        border-radius: 3px;
+        position: relative;
+        transform: rotate(300deg);
+    }
+
+    .piñon-circulo_1{
+        margin-top: -6.5px;
+        margin-left: 4px;
+        height: 12px;
+        width: 12px;
+        background-color: white;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .piñon-circulo_2{
+        margin-top: -8.5px;
+        margin-left: 7.5px;
+        height: 5px;
+        width: 5px;
+        background-color: #919191;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    /* triangulo_1*/
+
+    .triangulo_1{
+        border-top: solid rgb(105, 191, 151) 7px;
+        border-left: solid transparent 7px;
+        border-right: solid transparent 7px;
+        border-bottom: solid transparent 7px;
+        margin-top: 5px;
+    }
+
+.foto-perfil{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("../img/101.jpg");
+    filter: drop-shadow(1px 0px 5px rgb(131, 131, 131));
+}
+
+.nombre-usurario h1{
+    font-size: 20px;
+}
+
+.nombre-usurario h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+.nav-parte-2{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.idioma h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    margin-left: 7px;
+}
+
+@media screen and (min-width: 760px) {
+    .barra-navegacion{
+        display: none;
+    }
+}
+
+.navegacion-cuadro_1{
+    width: 35px;
+    height: 5px;
+    background-color: #02AD68;
+    border-radius: 5px;
+}
+
+.navegacion-cuadro_2{
+    width: 35px;
+    height: 5px;
+    background-color: #02AD68;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.navegacion-cuadro_3{
+    width: 35px;
+    height: 5px;
+    background-color: #02AD68;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 760px) {
+
+    .banner-principal{
+        max-width: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .banner-principal{
+        max-width: 450px;
+    }
+    
+}
+
+.banner-principal{
+    width: 1100px;
+    height: 150px;
+    background-image: url("../img/banner-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 30px;
+    filter: drop-shadow(1px 0px 5px rgb(173, 173, 173));
+    padding-top: 30px;
+    padding-left: 35px;
+    margin: 0% auto;
+}
+
+.banner-principal h5{
+    font-family: 'Playfair Display', serif; 
+    color: #02AD68;
+}
+
+
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
 

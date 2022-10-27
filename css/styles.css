@@ -805,18 +805,35 @@ p {
     background-color: var(--white);
     margin: auto;
     border-radius: var(--border-radius-cards);
+    padding:0.1px;
+}
+
+.student_status .m_auto{
+    margin: auto;
 }
 
 .student_status .status{
     display: grid;
-    grid-template-columns: 30% 30% 60%;
+    grid-template-columns: 28% 22% 50%;
     align-items: center;
+    gap:10px ;
+    margin: 15px;
+}
+
+.student_status button{
+    grid-column:span 3;
+    margin: auto;
+    padding: 6px;
 }
 
 .status_information{
     border-left: 1.5px solid var(--green-darker);
     text-align: left;
-    background-color: #29ABE2;
+    padding-left: 15px;
+}
+
+.student_status .status p, .student_status .status h4{
+    font-size: 14px;
 }
 
 .status_state{
@@ -835,7 +852,11 @@ p {
     border-radius: 50%;
     border: 4px solid var(--white);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.286);
+    margin: auto;
 }
 
+.student_status .hide{
+    display: none;
+}
 
 /*sección 5. footer/ Felipe*/

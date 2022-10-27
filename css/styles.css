@@ -613,7 +613,41 @@ p{
     right: 20px;
 }
 
+/*---------module_information-----------*/
 
+.module_information{
+    display: grid;
+    gap: 15px;
+}
+
+.module_information .information{
+    width: 95%;
+    background:var(--white);
+    margin: auto;
+    border-radius: var(--border-radius-cards);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+
+.module_information p{
+    padding: 13px 15px;
+    font-family: 'Dosis', sans-serif;
+    width: 150px;
+    border-right: 1.5px solid var(--green-darker);
+    margin: 4px;
+}
+
+.module_information p:last-of-type{
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.module_information span{
+    color: #AAAAAA;
+}
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
 

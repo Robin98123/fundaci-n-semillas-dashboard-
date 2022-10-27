@@ -8,6 +8,12 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
 }
 
 h1 {
@@ -20,6 +26,12 @@ p{
 
 
 /*sección 1. barra de navegación lateral/ Felipe*/
+.container-sidebar{
+  position: fixed;
+  background-color: #01b76d;
+  width: 225px;
+  height: 100%;
+}
 
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
 

@@ -30,9 +30,59 @@ p{
   position: fixed;
   background-color: #01b76d;
   width: 225px;
-  height: 100%;
+  height: 90%;
+  border-radius:30px;
+  margin-top: 30px;
 }
-
+.container-sidebar .logo{
+  position:fixed;
+  top:15px;
+  left: 25px;
+  width: 170px;
+  height: 40px;
+  margin: auto;
+  background-color: #f3f3f3;
+  text-align: center;
+  border-radius:20px;
+}
+.container-sidebar .logo img{
+  display: inline-block;
+  margin-left: 5px;
+  padding-right: 0;
+  margin-right: 0;
+  width: 40px;
+  height: 39px;
+}
+.container-sidebar .logo span{
+  display:inline-block;
+  font-size: 12px;
+}
+.container-sidebar .title-one{
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.container-sidebar .title-one h1{
+  color:#fff;
+  font-weight: 400;
+}
+.container-sidebar .title-one span{
+  font-weight: 800;
+  color:#fff;
+}
+.container-sidebar .img-sidebar{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container-sidebar .img-profile img{
+  display:block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: auto;
+}
+.container-sidebar .img-sidebar
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/

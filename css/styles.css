@@ -39,7 +39,7 @@ p{
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
 
-.filters, .student_resume, .card_leaf_progress{
+.filters, .student_resume, .card_leaf_progress, .card-risk-indicator{
     width: 95%;
     margin: 15px auto;
 }
@@ -63,8 +63,7 @@ p{
 
 .selectors{
     display: grid;
-    grid-template-columns: 62% 34.5%;
-    gap: 10px;
+    grid-template-columns: 60% 40%;
 }
 
 .filters .student{
@@ -79,11 +78,13 @@ p{
 
 .selectors .diplomat{
     color: var(--green-darker);
+    margin-right: 5px;
 }
 
 .selectors .module{
     background: var(--green-darker);
     color: var(--white);
+    margin-left: 5px;
 }
 
 
@@ -401,6 +402,218 @@ p{
 .pos{
     z-index: 1;
 }
+
+
+/*-----card risk indicator-----*/
+
+.card-risk-indicator{
+    background: var(--white);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    border-radius: var(--border-radius-cards);
+}
+
+/*-------------emojis------------*/
+
+.emojis-progress{
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    height: 40px;
+}
+
+.emoji{
+    width: 35px;
+    padding: 5px 0 10px;
+    border-radius: 50%;
+    border: 2.5px solid #F95661;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/*----------emoji sad---------*/
+
+.emoji .eyes{
+    display: flex;
+    font-weight:bolder;
+}
+
+.emoji .eyes p{
+    color: #F95661;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0 4px;
+}
+
+.emoji-mouth{
+    margin: 0 auto;
+    position: relative;
+    height: 10px;
+    width: 28px;
+
+}
+
+#a, #b, #c, #d, #e{
+    width: 2.5px;
+    height: 1.8px;
+    border: 1.8px solid #F95661;
+    position: absolute;
+    top:45%;
+    left:70%;
+}
+
+#a, #c, #e{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 0;
+}
+
+#a{
+    margin: 0 0 0 -18px;
+}
+
+#c{
+    margin: 0 -9px;
+}
+
+#b, #d{
+    margin: -3px 0 0 -13.6px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: 0;
+}
+
+#a:before, #e:after{
+    content: "";
+    width: 1.7px;
+    height: 2px;
+    position: absolute;
+    background: #F95661;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    top: -1px;
+}
+
+#a:before{
+    left:-2px;
+}
+
+#e:after{
+    left: 2.6px;
+}
+
+#d{
+    margin: -3px 0 0 -4.7px;
+}
+
+#e{
+    margin: 0px 0 0 -0px;
+}
+
+
+/*-------------emoji superhappy------------*/
+
+.superhappy{
+    border-color: #66CB6D;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.superhappy p, .happy p{
+    height: 5px;
+    width: 5px;
+    background: #66CB6D;
+    border-radius: 50%;
+}
+
+.superhappy .emoji-mouth{
+    height: 8px;
+    width: 22px;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #66CB6D;
+}
+
+/*-------------emoji happy------------*/
+
+.happy{
+    border-color: #FBCE3E;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.happy p{
+    background: #FBCE3E;
+}
+
+.happy .emoji-mouth{
+    margin: auto;
+    width: 22px;
+    height: 9px;
+    border: 2px solid #FBCE3E;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top: 0;
+}
+
+/*----------Graphic progress---------*/
+
+.graphic-progress{
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#F95661 0deg, #F95661 36deg, #F8834E 36deg, #F8834E 72deg, #FBCE3E 72deg, #FBCE3E 108deg, #9ED77A 108deg, #9ED77A 144deg, #6AC96C 144deg, #6AC96C 180deg, white 180deg);
+    transform: rotate(270deg);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic-progress .circle{
+    transform: rotate(-20deg);
+    position: relative;
+}
+
+.graphic-progress .circle{
+    width: 78%;
+    height: 78%;
+    background:var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic-progress .pointer{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #868686;
+    z-index: 1;
+}
+
+.triangle-pointer{
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid #000000;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    position: absolute;
+    right: 20px;
+}
+
+
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
 

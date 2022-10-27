@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,62 +9,95 @@
     <title>semillas | Rol super Admin</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
 </head>
+
 <body>
-    
-<!--sección 1. barra de navegación lateral/ Felipe-->
 
-<!--sección 2. buscador, barra de navegación,banner superior/Robinson -->
+    <!--sección 1. barra de navegación lateral/ Felipe-->
 
-<!--sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela -->
+    <!--sección 2. buscador, barra de navegación,banner superior/Robinson -->
 
-<section class="filters">
-    <div class="student">
-        <p><strong>Estudiante: </strong>Andrea Ramirez</p>
-    </div>
-    <div class="selectors">
-    <select name="diplomat" id="diplomat" class="diplomat">
-        <option value="1">Sostenibilidad ambiental</option>
-        <option value="2">Sistemas de gestión ambiental</option>
-        <option value="2">Gestión  de proyectos ambientales</option>
-    </select>
-    <select name="module" id="module" class="module">
-        <option value="1">Módulo 1</option>
-        <option value="2">Módulo 2</option>
-        <option value="2">Módulo 3</option>
-    </select>
-    </div>
-</section>
+    <!--sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela -->
 
-<section id="modal" class="modal">
-    <div class="modal_container">
-        <div class="modal_header">
-            <a href="#card_student" class="modalClose"><strong>x</strong></a> 
+    <section class="filters">
+        <div class="student">
+            <p><strong>Estudiante: </strong>Andrea Ramirez</p>
         </div>
-        <div class="modal_content card_student">
+        <div class="selectors">
+            <select name="diplomat" id="diplomat" class="diplomat">
+                <option value="1">Sostenibilidad ambiental</option>
+                <option value="2">Sistemas de gestión ambiental</option>
+                <option value="2">Gestión de proyectos ambientales</option>
+            </select>
+            <select name="module" id="module" class="module">
+                <option value="1">Módulo 1</option>
+                <option value="2">Módulo 2</option>
+                <option value="2">Módulo 3</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="modal" class="modal">
+        <div class="modal_container">
+            <div class="modal_header">
+                <a href="#card_student" class="modalClose"><strong>x</strong></a>
+            </div>
+            <div class="modal_content card_student">
+                <div class="information_student">
+                    <div class="profile"><img src="img/93.jpg" alt="Imagen de Andrea" class="profile_image">
+                        <p></p>
+                    </div>
+                    <div>
+                        <h3>Andrea Ramirez</h3>
+                        <p>Diplomado en sostenibilidad ambiental</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="personal_information">
+                    <h3>Datos personales</h3>
+                    <p><strong>Id:</strong> 1075000000</p>
+                    <p><strong>Dirección:</strong> cra 15 N 0f-5f</p>
+                    <p><strong>email:</strong> Andrea_ra@semillasf.com</p>
+                    <p><strong>teléfono:</strong> 315 645 78 98</p>
+                </div>
+
+                <div class="program_information">
+                    <h3>Datos del programa</h3>
+                    <p><strong>Antigüedad: </strong>1 año en el programa</p>
+                    <p><strong>Estado: </strong><span> Activo</span></p>
+                </div>
+
+                <button class="button_modal">Revisar Dash</button>
+
+                <div class="other_students">
+                    <img src="img/avatar_1.jpg" alt="Estudiante 1">
+                    <img src="img/avatar_2.jpg" alt="Estudiante 2">
+                    <img src="img/avatar_3.jpg" alt="Estudiante 3">
+                    <img src="img/avatar_4.jpg" alt="Estudiante 4">
+                    <img src="img/avatar_5.jpg" alt="Estudiante 5">
+                    <div class="layer_text">
+                        +12
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="student_resume">
+
+        <article class="card_student" id="card_student">
+            <h2>Id card Estudiante</h2><br>
             <div class="information_student">
                 <div class="profile"><img src="img/93.jpg" alt="Imagen de Andrea" class="profile_image">
-                <p></p>
+                    <p></p>
+                </div>
+                <div>
+                    <h3>Andrea Ramirez</h3>
+                    <p>Diplomado en sostenibilidad ambiental</p>
+                    <a href="#modal">Ver perfil completo</a>
+                </div>
             </div>
-                <div><h3>Andrea Ramirez</h3>
-                <p>Diplomado en sostenibilidad ambiental</p>
-                <a href="#"></a></div>
-            </div>
-            <div class="personal_information">
-                <h3>Datos personales</h3>
-                <p><strong>Id:</strong> 1075000000</p>
-                <p><strong>Dirección:</strong> cra 15 N 0f-5f</p>
-                <p><strong>email:</strong> Andrea_ra@semillasf.com</p>   
-                <p><strong>teléfono:</strong> 315 645 78 98</p>
-            </div>
-
-            <div class="program_information">
-                <h3>Datos del programa</h3>
-                <p><strong>Antigüedad: </strong>1 año en el programa</p>
-                <p><strong>Estado: </strong><span> Activo</span></p>
-            </div>
-
-            <button class="button_modal">Revisar Dash</button>
-
             <div class="other_students">
                 <img src="img/avatar_1.jpg" alt="Estudiante 1">
                 <img src="img/avatar_2.jpg" alt="Estudiante 2">
@@ -73,160 +107,153 @@
                 <div class="layer_text">
                     +12
                 </div>
+            </div>
+            </div>
+        </article>
+
+        <article class="progress-bar">
+            <h2>Grado de aceptación del diplomado</h2>
+            <div class="circular_progress_barr">
+
+                <div class="circle-bar circle-bar-individual">
+                    <div class="circle">
+                        <div class="mask full-individual">
+                            <div class="fill-individual"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-individual"></div>
+                        </div>
+                        <div class="inside-circle"></div>
+                    </div>
+                </div>
+
+                <div class="circle-bar">
+                    <div class="circle">
+                        <div class="mask full-group">
+                            <div class="fill-group"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-group"></div>
+                        </div>
+                        <div class="inside-circle"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-    </div>
-</section>
+            <div class="statistics">
+                <h3>Grupo: <span>65%</span></h3>
+                <h3>Estudiante: <span>51%</span></h3>
+            </div>
+        </article>
+    </section>
 
-<section class="student_resume">
+    <h1>Estadísticas de progreso</h1>
+
+    <section class="progress_statistics">
+
+        <article class="card_leaf_progress">
+            <h2>Progreso del diplomado</h2>
+            <article class="card-progress">
+                <div class="leaf-progress">
+                    <div class="container-leaf">
+                        <div class="leaf green-darker"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                    <div class="container-leaf">
+                        <div class="leaf green-medium"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                    <div class="container-leaf pos">
+                        <div class="leaf green-light"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                    <div class="container-leaf">
+                        <div class="leaf gray"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                    <div class="container-leaf">
+                        <div class="leaf gray"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                    <div class="container-leaf">
+                        <div class="leaf gray"></div>
+                        <div class="leaf leaf-small"></div>
+                    </div>
+                </div>
+            </article>
+        </article>
+
+        <article class="card-risk-indicator">
+            <div class="graphic-progress">
+                <div class="circle">
+                    <div class="pointer"></div>
+                    <div class="triangle-pointer"></div>
+                </div>
+            </div>
     
-    <article class="card_student" id="card_student">
-        <h2>Id card Estudiante</h2><br>
-        <div class="information_student">
-            <div class="profile"><img src="img/93.jpg" alt="Imagen de Andrea" class="profile_image">
-            <p></p>
-        </div>
-            <div><h3>Andrea Ramirez</h3>
-            <p>Diplomado en sostenibilidad ambiental</p>
-            <a href="#modal">Ver perfil completo</a></div>
-        </div>
-        <div class="other_students">
-            <img src="img/avatar_1.jpg" alt="Estudiante 1">
-            <img src="img/avatar_2.jpg" alt="Estudiante 2">
-            <img src="img/avatar_3.jpg" alt="Estudiante 3">
-            <img src="img/avatar_4.jpg" alt="Estudiante 4">
-            <img src="img/avatar_5.jpg" alt="Estudiante 5">
-            <div class="layer_text">
-                +12
-            </div>
-            </div>
-        </div>
-    </article>
-
-    <article class="progress-bar">
-        <h2>Grado de aceptación del diplomado</h2>
-        <div class="circular_progress_barr">
-
-            <div class="circle-bar circle-bar-individual">
-                <div class="circle">
-                    <div class="mask full-individual">
-                        <div class="fill-individual"></div>
+            <article class="emojis-progress">
+                <div class="emoji">
+                    <div class="eyes"><p>></p><p><</p></div>
+                    <div class="emoji-mouth">
+                        <div id="a"></div>
+                        <div id="b"></div>
+                        <div id="c"></div>
+                        <div id="d"></div>
+                        <div id="e"></div>
                     </div>
-                    <div class="mask half">
-                        <div class="fill-individual"></div>
+                </div>
+    
+                <div class="emoji happy">
+                    <div class="eyes"><p></p><p></p></div>
+                    <div class="emoji-mouth"> 
                     </div>
-                    <div class="inside-circle"></div>
+                </div>
+    
+                <div class="emoji superhappy">
+                    <div class="eyes"><p></p><p></p></div>
+                    <div class="emoji-mouth"> 
+                    </div>
+                </div>
+                
+            </article>
+        </article>
+
+        <article class="module_information">
+
+            <div class="information average">
+                <p>Promedio académico</p>
+                <p>6,36/<span>10</span></p>
+            </div>
+
+            <div class="information lessons">
+                <p>Lecciones vistas</p>
+                <p>14/<span>24</span></p>
+            </div>
+        </article>
+
+    </section>
+
+    <!--sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson -->
+    <h2>Estatus de los estudiantes</h2>
+    <article class="student_status">
+        <article class="status">
+            <h4>Hace 30 min</h4>
+            <img src="img/avatar_3.jpg" alt="Foto perfil estudiante" class="picture_profile">
+            <div class="status_information">
+                <div class="status_summary">
+                    <h3>Anita Alvarez</h3>
+                    <p>1 año en el programa</p>
+                </div>
+                <div class="status_state">
+                    <h4>Estado: </h4>
+                    <span>Activo</span>
                 </div>
             </div>
-        
-            <div class="circle-bar">
-                <div class="circle">
-                    <div class="mask full-group">
-                        <div class="fill-group"></div>
-                    </div>
-                    <div class="mask half">
-                        <div class="fill-group"></div>
-                    </div>
-                    <div class="inside-circle"></div>
-                </div>
-            </div>
-        </div>
-        <div class="statistics">
-            <h3>Grupo: <span>65%</span></h3>
-            <h3>Estudiante: <span>51%</span></h3>
-        </div>
-    </article>
-</section>
-
-<h1>Estadísticas de progreso</h1>
-
-<section class="progress_statistics">
-
-    <article class="card_leaf_progress">
-        <h2>Progreso del diplomado</h2>
-        <article class="card-progress">
-            <div class="leaf-progress">
-                <div class="container-leaf">
-                    <div class="leaf green-darker"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-                <div class="container-leaf">
-                    <div class="leaf green-medium"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-                <div class="container-leaf pos">
-                    <div class="leaf green-light"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-                <div class="container-leaf">
-                    <div class="leaf gray"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-                <div class="container-leaf">
-                    <div class="leaf gray"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-                <div class="container-leaf">
-                    <div class="leaf gray"></div>
-                    <div class="leaf leaf-small"></div>
-                </div>
-            </div>
+            <button class="button_modal">Revisar Dash</button>
         </article>
     </article>
 
-    <article class="card-risk-indicator">
-        <div class="graphic-progress">
-            <div class="circle">
-                <div class="pointer"></div>
-                <div class="triangle-pointer"></div>
-            </div>
-        </div>
-
-        <article class="emojis-progress">
-            <div class="emoji">
-                <div class="eyes"><p>></p><p><</p></div>
-                <div class="emoji-mouth">
-                    <div id="a"></div>
-                    <div id="b"></div>
-                    <div id="c"></div>
-                    <div id="d"></div>
-                    <div id="e"></div>
-                </div>
-            </div>
-
-            <div class="emoji happy">
-                <div class="eyes"><p></p><p></p></div>
-                <div class="emoji-mouth"> 
-                </div>
-            </div>
-
-            <div class="emoji superhappy">
-                <div class="eyes"><p></p><p></p></div>
-                <div class="emoji-mouth"> 
-                </div>
-            </div>
-            
-        </article>
-    </article>
-
-    <article class="module_information">
-
-        <div class="information average">
-            <p>Promedio académico</p> <p>6,36/<span>10</span></p>
-        </div>
-
-        <div class="information lessons">
-            <p>Lecciones vistas</p> <p>14/<span>24</span></p>
-        </div>
-    </article>
-
-</section>
-
-<!--sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson -->
-
-<!--sección 5. footer/ Felipe -->
+    <!--sección 5. footer/ Felipe -->
 
 </body>
+
 </html>

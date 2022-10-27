@@ -4,32 +4,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-:root{
-    --green-darker:#009458;
-    --green-light:#69BF97;
+:root {
+    --green-darker: #009458;
+    --green-light: #69BF97;
     --white: #FFFFFF;
 
-    --body-color:#F3F3F3;
+    --body-color: #F3F3F3;
 
-    --border-radius-cards:15px;
+    --border-radius-cards: 15px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
-body{
+body {
     background: var(--body-color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Dosis', sans-serif;
 }
 
-p{
-    font-family: 'Playfair Display', serif; 
+p {
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -39,19 +42,23 @@ p{
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
 
-.filters, .student_resume, .card_leaf_progress, .card-risk-indicator{
+.filters,
+.student_resume,
+.card_leaf_progress,
+.card-risk-indicator {
     width: 95%;
     margin: 15px auto;
 }
 
-.filters{
+.filters {
     display: grid;
     grid-template-columns: 100%;
-    gap:10px;
-    --border-radius-filter:5px;
+    gap: 10px;
+    --border-radius-filter: 5px;
 }
 
-.filters .student, .filters select{
+.filters .student,
+.filters select {
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -61,27 +68,27 @@ p{
     border-radius: var(--border-radius-filter);
 }
 
-.selectors{
+.selectors {
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
-.filters .student{
+.filters .student {
     background-color: var(--green-light);
 }
 
-.selectors select{
+.selectors select {
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
     font-weight: bold;
 }
 
-.selectors .diplomat{
+.selectors .diplomat {
     color: var(--green-darker);
     margin-right: 5px;
 }
 
-.selectors .module{
+.selectors .module {
     background: var(--green-darker);
     color: var(--white);
     margin-left: 5px;
@@ -90,24 +97,26 @@ p{
 
 /*----------------------------*/
 
-.student_resume{
+.student_resume {
     display: grid;
-    gap:15px;
+    gap: 15px;
 }
 
 /*---------card student------*/
 
-.card_student h1, .card_student h3, .layer_text{
+.card_student h1,
+.card_student h3,
+.layer_text {
     font-family: 'Dosis', sans-serif;
 }
 
-.card_student{
+.card_student {
     background: var(--white);
     border-radius: var(--border-radius-cards);
     padding: 10px;
 }
 
-.profile{
+.profile {
     text-align: center;
     position: relative;
     display: flex;
@@ -116,7 +125,7 @@ p{
     margin: auto;
 }
 
-.profile p{
+.profile p {
     width: 10px;
     height: 10px;
     background: #00FF0A;
@@ -124,16 +133,16 @@ p{
     border: 5px solid var(--white);
     position: absolute;
     bottom: 12px;
-    right:8px;
+    right: 8px;
 }
 
-.card_student .profile_image{
+.card_student .profile_image {
     width: 100%;
     max-width: 100px;
     margin: auto;
 }
 
-.other_students{
+.other_students {
     display: flex;
     margin-top: 20px;
     justify-content: flex-end;
@@ -141,18 +150,18 @@ p{
     max-height: 70px;
 }
 
-.other_students img{
+.other_students img {
     max-width: 70px;
     max-height: 50px;
-    margin-left:-25px;
+    margin-left: -25px;
 }
 
-.card_student img{
+.card_student img {
     border-radius: 50%;
-    border:5px solid var(--white)
+    border: 5px solid var(--white)
 }
 
-.layer_text{
+.layer_text {
     position: absolute;
     background: rgba(0, 0, 0, 0.432);
     border-radius: 50%;
@@ -167,7 +176,7 @@ p{
     justify-content: center;
 }
 
-.information_student{
+.information_student {
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 15px;
@@ -175,11 +184,11 @@ p{
     line-height: 1.5;
 }
 
-.information_student h3{
+.information_student h3 {
     font-size: 21px;
 }
 
-.information_student a{
+.information_student a {
     text-decoration: none;
     color: var(--green-darker);
     border-bottom: 1px solid var(--green-darker);
@@ -187,13 +196,13 @@ p{
 
 /*progress bar*/
 
-.progress-bar{
+.progress-bar {
     background: var(--white);
     padding: 15px;
     border-radius: var(--border-radius-cards);
 }
 
-.circular_progress_barr{
+.circular_progress_barr {
     display: flex;
     position: relative;
     width: 150px;
@@ -212,14 +221,14 @@ p{
 }
 
 .circle-bar .circle .mask,
-.circle-bar .circle .fill-group{
+.circle-bar .circle .fill-group {
     width: 150px;
     height: 150px;
     position: absolute;
     border-radius: 50%;
 }
 
-.circle-bar-individual{
+.circle-bar-individual {
     width: 110px;
     height: 110px;
     position: absolute;
@@ -228,14 +237,14 @@ p{
     left: 20px;
 }
 
-.circle-bar .fill-individual{
+.circle-bar .fill-individual {
     width: 110px;
     height: 110px;
     position: absolute;
     border-radius: 50%;
 }
 
-.circle-bar-individual .circle .mask{
+.circle-bar-individual .circle .mask {
     width: 110px;
     height: 110px;
 }
@@ -261,7 +270,7 @@ p{
     z-index: 100;
 }
 
-.circle-bar-individual .inside-circle{
+.circle-bar-individual .inside-circle {
     width: 84px;
     height: 84px;
     margin-top: 13px;
@@ -283,10 +292,11 @@ p{
 
 @keyframes fill-individual {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-    transform: rotate(93deg);
+        transform: rotate(93deg);
     }
 }
 
@@ -303,28 +313,29 @@ p{
     transform: rotate(135deg);
 }
 
-@keyframes fill-group{
+@keyframes fill-group {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-    transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 }
 
-.statistics{
+.statistics {
     display: flex;
     max-width: 250px;
     justify-content: space-between;
     margin: auto;
 }
 
-.statistics h3:first-of-type span{
+.statistics h3:first-of-type span {
     color: #FBB03B;
 }
 
-.statistics span{
-    color:#29ABE2;
+.statistics span {
+    color: #29ABE2;
     font-family: 'Playfair Display', serif;
     font-size: 25px;
 }
@@ -332,25 +343,25 @@ p{
 
 /*-------card progress diplomat-------*/
 
-.card_leaf_progress{
+.card_leaf_progress {
     background-color: var(--white);
     border-radius: var(--border-radius-cards);
-    padding-top:15px;
+    padding-top: 15px;
     height: 150px;
 }
 
-.card_leaf_progress h2{
+.card_leaf_progress h2 {
     margin-left: 15px;
 }
 
-.card-progress{
+.card-progress {
     display: flex;
     justify-content: center;
 }
 
 /*------------leaf progress------------*/
 
-.leaf-progress{
+.leaf-progress {
     display: flex;
     width: 250px;
 }
@@ -374,7 +385,7 @@ p{
     border: 2px solid var(--white);
 }
 
-.leaf-small{
+.leaf-small {
     background: rgb(255, 255, 255);
     width: 28px;
     height: 28px;
@@ -382,24 +393,24 @@ p{
     border-bottom-left-radius: 20px;
 }
 
-.green-darker{
+.green-darker {
     background: #A8D7C1;
 }
 
-.green-medium{
+.green-medium {
     background: #01995C;
 }
 
-.green-light{
+.green-light {
     background: #639E2E;
-    
+
 }
 
-.gray{
+.gray {
     background: #EAEAEA;
 }
 
-.pos{
+.pos {
     z-index: 1;
 }
 
@@ -613,16 +624,17 @@ p{
     right: 20px;
 }
 
+
 /*---------module_information-----------*/
 
-.module_information{
+.module_information {
     display: grid;
     gap: 15px;
 }
 
-.module_information .information{
+.module_information .information {
     width: 95%;
-    background:var(--white);
+    background: var(--white);
     margin: auto;
     border-radius: var(--border-radius-cards);
     display: grid;
@@ -630,7 +642,7 @@ p{
     align-items: center;
 }
 
-.module_information p:first-of-type{
+.module_information p:first-of-type {
     padding: 13px 15px;
     font-family: 'Dosis', sans-serif;
     width: 150px;
@@ -638,47 +650,35 @@ p{
     margin: 4px;
 }
 
-.module_information p:last-of-type{
+.module_information p:last-of-type {
     font-family: 'Playfair Display';
     font-size: 24px;
     margin: auto;
     font-weight: bold;
 }
 
-.module_information span{
+.module_information span {
     color: #AAAAAA;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------Scrollbar modal-----------*/
 
 .modal_container::-webkit-scrollbar {
-    width: 8px;      
+    width: 8px;
 }
 
 .modal_container::-webkit-scrollbar-track {
-    background: white;       
+    background: white;
 }
 
 .modal_container::-webkit-scrollbar-thumb {
-    background-color: var(--green-light);   
-    border-radius: 10px;      
+    background-color: var(--green-light);
+    border-radius: 10px;
     border: 2px solid #e4e2e2;
 }
 
 /*---------------Modal----------------*/
-.modal{
+.modal {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -687,34 +687,35 @@ p{
     z-index: 100;
     background-color: rgba(51, 51, 51, 0.466);
     display: flex;
-    --opacity:0;
-    --pointer:none;
+    --opacity: 0;
+    --pointer: none;
 
-    opacity:var(--opacity);
+    opacity: var(--opacity);
 
     pointer-events: var(--pointer);
     transition: opacity 0.5s;
 }
 
-.modal:target .modal_container{
+.modal:target .modal_container {
     animation: show 1s 0.5s backwards;
 }
 
-@keyframes show{
-    0%{
+@keyframes show {
+    0% {
         transform: translateY(-150vh);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-.modal:target{
-    --opacity:1;
-    --pointer:unset;
+.modal:target {
+    --opacity: 1;
+    --pointer: unset;
 }
 
-.modal_container{
+.modal_container {
     margin: auto;
     background-color: white;
     width: 90%;
@@ -722,7 +723,7 @@ p{
     max-height: 90%;
     overflow: hidden;
     text-align: center;
-    border-radius:5px;
+    border-radius: 5px;
     border: 0.2px solid #3333339e;
     overflow-y: scroll;
 }
@@ -738,7 +739,7 @@ p{
     }
 }*/
 
-.modal_header{
+.modal_header {
     font-size: 23px;
     border-bottom: 2px solid #F5F5F5;
     height: 30px;
@@ -748,12 +749,12 @@ p{
     padding-right: 15px;
 }
 
-.modal_header a{
+.modal_header a {
     text-decoration: none;
     color: #AAAAAA;
 }
 
-.modal_content{
+.modal_content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -761,28 +762,29 @@ p{
     font-size: 14px;
 }
 
-.personal_information{
+.personal_information {
     text-align: left;
     border: 2px solid #aaaaaa30;
     border-radius: var(--border-radius-filter);
     padding: 10px 20px;
 }
 
-.program_information{
+.program_information {
     text-align: left;
     padding: 0 20px;
 }
 
-.program_information span{
+.program_information span {
     color: var(--green-darker);
 }
 
-.modal_content strong, .modal_content{
+.modal_content strong,
+.modal_content {
     font-family: 'Dosis', sans-serif;
     color: #848484;
 }
 
-.button_modal{
+.button_modal {
     background: var(--green-light);
     border: none;
     padding: 8px;
@@ -795,5 +797,45 @@ p{
 
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
+
+/*---------student status---------*/
+
+.student_status{
+    width: 95%;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: var(--border-radius-cards);
+}
+
+.student_status .status{
+    display: grid;
+    grid-template-columns: 30% 30% 60%;
+    align-items: center;
+}
+
+.status_information{
+    border-left: 1.5px solid var(--green-darker);
+    text-align: left;
+    background-color: #29ABE2;
+}
+
+.status_state{
+    display: flex;
+    align-items: center;
+}
+
+.status_state span{
+    color: var(--green-darker);
+    margin-left: 5px;
+}
+
+.status .picture_profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.286);
+}
+
 
 /*sección 5. footer/ Felipe*/

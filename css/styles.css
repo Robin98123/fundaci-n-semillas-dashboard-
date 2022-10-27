@@ -39,7 +39,7 @@ p{
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
 
-.filters, .student_resume{
+.filters, .student_resume, .card_leaf_progress{
     width: 95%;
     margin: 15px auto;
 }
@@ -324,6 +324,82 @@ p{
 
 .statistics span{
     color:#29ABE2;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+
+/*-------card progress diplomat-------*/
+
+.card_leaf_progress{
+    background-color: var(--white);
+    border-radius: var(--border-radius-cards);
+    padding-top:15px;
+    height: 150px;
+}
+
+.card_leaf_progress h2{
+    margin-left: 15px;
+}
+
+.card-progress{
+    display: flex;
+    justify-content: center;
+}
+
+/*------------leaf progress------------*/
+
+.leaf-progress{
+    display: flex;
+    width: 250px;
+}
+
+.container-leaf {
+    width: 250px;
+    height: 100px;
+    position: relative;
+}
+
+.leaf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid var(--white);
+}
+
+.leaf-small{
+    background: rgb(255, 255, 255);
+    width: 28px;
+    height: 28px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.green-darker{
+    background: #A8D7C1;
+}
+
+.green-medium{
+    background: #01995C;
+}
+
+.green-light{
+    background: #639E2E;
+    
+}
+
+.gray{
+    background: #EAEAEA;
+}
+
+.pos{
+    z-index: 1;
 }
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/

@@ -43,6 +43,18 @@ p{
     margin-top: 3rem;
 }
 
+        @media screen and (max-width: 1398px) {
+            #input-buscador{
+                max-width:300px;
+            }
+        }
+
+        @media screen and (max-width: 1022px) {
+            #input-buscador{
+                max-width: 100px;
+            }
+        }
+
             #input-buscador{
                 background-color: transparent;
                 position: absolute;
@@ -387,10 +399,370 @@ p{
     color: #02AD68;
 }
 
-
-
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
+
+.resumen_actividades{
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0% auto;
+    border-radius: 15px;
+    box-shadow: 3px 4px 10px 1px #bcbcbc;
+    margin-top: 2rem;
+}
+
+        .slider{
+            display: flex;
+            justify-content: center;
+            padding-top: 1.5rem;
+        }
+
+        .sliderm_1{
+            width: 302px;
+            height: 100px;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5rem;
+        }
+
+        .sliderm_1 img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 302px;
+            height: px;
+            opacity: 0;
+            transition: all 0.7s;
+        }
+
+
+        .sliderm_1 input[type="radio"] {
+            display:none;   
+        }
+
+        .sliderm_1 input[type="radio"]:checked ~ img {
+            opacity: 1 ;
+
+        }
+
+        .sliderm_1 label{
+            height: 100px;
+        }
+
+        .sliderm_1 input[type="radio"] + label {
+            position:relative;
+            z-index: 50;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-top: 27rem;
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: rgb(217, 215, 215);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .sliderm_1 input[type="radio"]:checked +label{
+            background: rgb(90, 90, 90);
+        }
+
+        .subtitulo_imagen{
+            position: relative;
+            margin-top: 230px;
+        }
+
+        .subtitulo_imagen h1{
+            font-size: 20px;
+        }
+
+        .subtitulo_imagen p{
+            font-size: 15px;
+        }
+
+        .estrellas{
+            margin-top: 1rem;
+            margin-left: 13rem;
+        }
+
+        .estrellas p{
+            color: #02AD68;
+        }
+
+/* Calendario */
+
+.seccion3-part2{
+    background-color: #02AD68;
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+}
+
+
+
+.calendario{
+    width: 600px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2rem;
+ position: relative;
+ border-radius: 20px;
+ box-shadow: 3px 4px 10px 1px #bcbcbc;
+}
+
+        .contenido_calendario{
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+
+        .calendario-dia{
+            position: relative;
+            display: flex;
+            margin-top: -610px;
+            margin-left: 0rem;
+            gap: 1.3rem;
+        }
+
+        .calendario-dia_24{
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 3px 4px 10px 1px #bcbcbc;
+        }
+
+        .calendario-dia_24 h1{
+            font-size: 20px;
+            margin-left: 0.8rem;
+        }
+
+        .calendario-dia_24 p{
+            font-size: 15px;
+            margin-left: 0.8rem;
+        }
+
+        .linea-horizontal{
+            margin-left: -18px;
+        }
+
+        .lineas{
+            position: relative;
+            margin-top: 20rem;
+            margin-left: 2.8rem;
+            color: rgb(217, 215, 215);
+        }
+
+        .lineas-verticales{
+            position: relative;
+            color: rgb(217, 215, 215);
+            transform: rotate(90deg);
+            margin-top: -243px;
+            margin-left: -110px;
+        }
+
+        .lineas-verticales h1{
+            margin-bottom: 30px;
+        }
+
+
+        .tarjetas-blancas{
+            opacity: 0;
+            animation-duration: 1seg;
+        }
+
+        .tarjetas-blancas:hover{
+            opacity: 1;
+            transition: opacity 1s ease 0s;
+            
+        }
+
+        /*tarejta 1-calendario*/
+
+        .calendario-tarjeta{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: #ffffff;
+            margin-left: 10px;
+            margin-top: 1rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 10px;
+            padding-top: 2px;
+            box-shadow: 3px 4px 10px 1px #bcbcbc;
+        }
+
+        .calendario-tarjeta:hover{
+            background-color: #fbf6d0;
+        }
+
+        .calendario-tarjeta_marcador{
+            width: 6px;
+            height: 40px;
+            background-color: #B741FF;
+            border-radius: 0px 0px  5px 0px ;
+        }
+
+        .calendario-tarjeta h1{
+            font-size: 15px;
+        }
+
+        .calendario-tarjeta_imagen{
+            width: 60px;
+            height: 30px;
+            background-image: url("../img/leccion1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        /*tarejta 2-calendario*/
+
+        .calendario-tarjeta_2{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: #ffffff;
+            margin-left: 80px;
+            margin-top: 1rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 10px;
+            padding-top: 2px;
+            box-shadow: 3px 4px 10px 1px #bcbcbc;
+        }
+
+        .calendario-tarjeta_2:hover{
+            background-color: #fbf6d0;
+        }
+
+        .calendario-tarjeta_marcador2{
+            width: 6px;
+            height: 40px;
+            background-color: #FFC700;
+            border-radius: 0px 0px  5px 0px ;
+        }
+
+        .calendario-tarjeta_2 h1{
+            font-size: 15px;
+        }
+
+        .calendario-tarjeta_imagen2{
+            width: 60px;
+            height: 30px;
+            background-image: url("../img/leccion2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        /*tarejta 3-calendario*/
+
+        .calendario-tarjeta_3{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: #ffffff;
+            margin-left: 295px;
+            margin-top: 1rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 10px;
+            padding-top: 2px;
+            box-shadow: 3px 4px 10px 1px #bcbcbc;
+        }
+
+        .calendario-tarjeta_3:hover{
+            background-color: #fbf6d0;
+        }
+
+        .calendario-tarjeta_marcador3{
+            width: 6px;
+            height: 40px;
+            background-color: #639E2E;
+            border-radius: 0px 0px  5px 0px ;
+        }
+
+        .calendario-tarjeta_3 h1{
+            font-size: 15px;
+        }
+
+        .calendario-tarjeta_imagen3{
+            width: 60px;
+            height: 30px;
+            background-image: url("../img/Leccion3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        /*tarejta 4-calendario*/
+
+        .calendario-tarjeta_4{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: #ffffff;
+            margin-left: 70px;
+            margin-top: 1rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 10px;
+            padding-top: 2px;
+            box-shadow: 3px 4px 10px 1px #bcbcbc;
+        }
+
+        .calendario-tarjeta_4:hover{
+            background-color: #fbf6d0;
+        }
+
+        .calendario-tarjeta_marcador4{
+            width: 6px;
+            height: 40px;
+            background-color: #4154FF;
+            border-radius: 0px 0px  5px 0px ;
+        }
+
+        .calendario-tarjeta_4 h1{
+            font-size: 15px;
+        }
+
+        .calendario-tarjeta_imagen4{
+            width: 60px;
+            height: 30px;
+            background-image: url("../img/Lección4.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+    .planeador{
+        width: 250px;
+        height: 450px;
+        margin-top: 2rem;
+        margin-left: 0px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 3px 4px 10px 1px #bcbcbc;
+    }
+
 
 /*sección 5. footer/ Felipe*/

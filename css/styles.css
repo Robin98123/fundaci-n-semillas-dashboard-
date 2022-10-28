@@ -12,6 +12,7 @@
     --body-color: #F3F3F3;
 
     --border-radius-cards: 15px;
+    --border-circular:50%;
     --transition: all 500ms ease;
 }
 
@@ -34,7 +35,6 @@ h4 {
 
 p {
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
 }
 
 
@@ -50,6 +50,10 @@ p {
 .container-student_status{
     width: 95%;
     margin: 15px auto;
+}
+
+.m-auto{
+    margin: auto;
 }
 
 .filters {
@@ -118,6 +122,7 @@ p {
     background: var(--white);
     border-radius: var(--border-radius-cards);
     padding: 15px;
+    font-size: clamp(1em, 2.5vw, 1.1em);
 }
 
 .profile {
@@ -126,7 +131,6 @@ p {
     display: flex;
     align-items: center;
     max-width: 110px;
-    margin: auto;
 }
 
 .profile p {
@@ -141,9 +145,7 @@ p {
 }
 
 .card_student .profile_image {
-    width: 100%;
-    max-width: 100px;
-    margin: auto;
+    width: min(100px, 100%);
 }
 
 .other_students {
@@ -208,7 +210,7 @@ p {
 }
 
 .card_student img {
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     border: 5px solid var(--white)
 }
 
@@ -254,7 +256,6 @@ p {
 
 .information_student a:hover{
     color:#076942;
-
 }
 
 /*progress bar*/
@@ -278,7 +279,7 @@ p {
     width: 150px;
     height: 150px;
     background: #EAEAEA;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     transform: scaleX(-1);
     overflow: hidden;
 }
@@ -288,12 +289,17 @@ p {
     width: 150px;
     height: 150px;
     position: absolute;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
 }
 
-.circle-bar-individual {
+.circle-bar-individual,
+.circle-bar .fill-individual,
+.circle-bar-individual .circle .mask {
     width: 110px;
     height: 110px;
+}
+
+.circle-bar-individual{
     position: absolute;
     z-index: 10;
     top: 20px;
@@ -301,15 +307,8 @@ p {
 }
 
 .circle-bar .fill-individual {
-    width: 110px;
-    height: 110px;
     position: absolute;
-    border-radius: 50%;
-}
-
-.circle-bar-individual .circle .mask {
-    width: 110px;
-    height: 110px;
+    border-radius: var(--border-circular);
 }
 
 .circle-bar .circle .mask {
@@ -323,11 +322,10 @@ p {
 .circle-bar .inside-circle {
     width: 124px;
     height: 124px;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     background: #ffffff;
     line-height: 120px;
-    margin-top: 13px;
-    margin-left: 13px;
+    margin: 13px 0 0 13px;
     color: white;
     position: absolute;
     z-index: 100;
@@ -336,8 +334,7 @@ p {
 .circle-bar-individual .inside-circle {
     width: 84px;
     height: 84px;
-    margin-top: 13px;
-    margin-left: 13px;
+    margin: 13px 0 0 13px;
 }
 
 /* color animation */
@@ -390,7 +387,6 @@ p {
     display: flex;
     max-width: 250px;
     justify-content: space-between;
-    margin: auto;
 }
 
 .statistics h3:first-of-type span {
@@ -451,8 +447,7 @@ p {
     width: 50px;
     height: 50px;
     background: #000000;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 0 30px 0 30px;
     border: 2px solid var(--white);
 }
 
@@ -460,8 +455,7 @@ p {
     background: rgb(255, 255, 255);
     width: 28px;
     height: 28px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 0 20px 0 20px;
 }
 
 .green-darker {
@@ -474,7 +468,6 @@ p {
 
 .green-light {
     background: #639E2E;
-
 }
 
 .gray {
@@ -511,7 +504,7 @@ p {
 .emoji{
     width: 35px;
     padding: 5px 0 10px;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     border: 2.5px solid #F95661;
     display: flex;
     flex-direction: column;
@@ -540,7 +533,6 @@ p {
     position: relative;
     height: 10px;
     width: 28px;
-
 }
 
 #a, #b, #c, #d, #e{
@@ -553,8 +545,7 @@ p {
 }
 
 #a, #c, #e{
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius:0 0 50px 50px;
     border-top: 0;
 }
 
@@ -568,8 +559,7 @@ p {
 
 #b, #d{
     margin: -3px 0 0 -13.6px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius:50px 50px 0 0;
     border-bottom: 0;
 }
 
@@ -579,8 +569,7 @@ p {
     height: 2px;
     position: absolute;
     background: #F95661;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-radius:20px 20px 0 0;
     top: -1px;
 }
 
@@ -603,25 +592,29 @@ p {
 
 /*-------------emoji superhappy------------*/
 
+.happy,
 .superhappy{
     border-color: #66CB6D;
     display: grid;
     grid-template-rows: 60% 40%;
 }
 
+.superhappy{
+    border-color: #66CB6D;
+}
+
 .superhappy p, .happy p{
     height: 5px;
     width: 5px;
     background: #66CB6D;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
 }
 
 .superhappy .emoji-mouth{
     height: 8px;
     width: 22px;
     margin: auto;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius:0 0 20px 20px;
     border: 2px solid #66CB6D;
 }
 
@@ -629,8 +622,6 @@ p {
 
 .happy{
     border-color: #FBCE3E;
-    display: grid;
-    grid-template-rows: 60% 40%;
 }
 
 .happy p{
@@ -642,8 +633,7 @@ p {
     width: 22px;
     height: 9px;
     border: 2px solid #FBCE3E;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    border-radius:0 0 100px 100px;
     border-top: 0;
 }
 
@@ -654,8 +644,7 @@ p {
     width: 120px;
     background: conic-gradient(#F95661 0deg, #F95661 36deg, #F8834E 36deg, #F8834E 72deg, #FBCE3E 72deg, #FBCE3E 108deg, #9ED77A 108deg, #9ED77A 144deg, #6AC96C 144deg, #6AC96C 180deg, white 180deg);
     transform: rotate(270deg);
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius:0 50% 50% 0;
     border-top: 0;
     display: flex;
     align-items: center;
@@ -672,7 +661,7 @@ p {
     height: 78%;
     transform: rotate(-3deg);
     background:var(--white);
-    border-radius: 100%;
+    border-radius: var(--border-circular);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -691,7 +680,7 @@ p {
 .graphic-progress .pointer{
     height: 25px;
     width: 25px;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     background: #868686;
     z-index: 1;
 }
@@ -730,6 +719,17 @@ p {
     width: 150px;
     border-right: 1.5px solid var(--green-darker);
     margin: 4px;
+}
+
+@media (min-width:450px) {
+
+    .module_information .information {
+        grid-template-columns: 50% 50%;
+    }
+    
+    .module_information p:first-of-type {
+        width: 90%;
+    }
 }
 
 .module_information p:last-of-type {
@@ -810,17 +810,6 @@ p {
     overflow-y: scroll;
 }
 
-
-/*.modal:target .profile_image{
-    animation: scale 0.5s 1s backwards;
-}
-
-@keyframes scale{
-    0%{
-        transform: scale(0);
-    }
-}*/
-
 .modal_header {
     font-size: 23px;
     border-bottom: 2px solid #F5F5F5;
@@ -841,7 +830,7 @@ p {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 10px;
-    font-size: 14px;
+    font-size: clamp(1rem,2.5vw,1.4rem);
 }
 
 .personal_information {
@@ -938,7 +927,7 @@ p {
 .status .picture_profile{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: var(--border-circular);
     border: 4px solid var(--white);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.286);
     margin: auto;
@@ -948,11 +937,27 @@ p {
     display: none;
 }
 
-
 /*sección 5. footer/ Felipe*/
 
 .container-sidebar{
     display: none;
+}
+
+@media (min-width:650px){
+    .card_leaf_progress {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-progress{
+        margin: auto;
+    }
+
+    .module_information{
+        grid-column: span 2;
+        grid-template-columns: 53% auto;
+    }
 }
 
 @media (min-width:768px) {
@@ -974,21 +979,6 @@ p {
         display: grid;
         grid-template-columns: 53% auto;
         row-gap: 15px;
-    }
-
-    .card_leaf_progress {
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-progress{
-        margin: auto;
-    }
-
-    .module_information{
-        grid-column: span 2;
-        grid-template-columns: 53% auto;
     }
 
     .container-student_status{
@@ -1055,6 +1045,14 @@ p {
         display: grid;
     }
 
+    .module_information{
+        font-size: 20px;
+    }
+
+    .module_information p:first-of-type {
+        padding: 13px 15px;
+        width: 180px;
+    }
 
     #container-principal{
         margin-left: 225px;
@@ -1063,10 +1061,34 @@ p {
 }
 
 @media (min-width:1200px) {
+    
+    .student_status button{
+        grid-column:auto;
+        margin: auto;
+        padding: 6px;
+        width: max-content;
+    }
+    
+    .student_status .status{
+        display: grid;
+        grid-template-columns: 17% auto auto auto;
+        align-items: center;
+        gap:10px ;
+        margin: 15px;
+    }
+
+}
+
+@media (min-width:1400px) {
 
     .progress_statistics{
         grid-template-columns: 40% 30% auto;
         row-gap: 15px;
+    }
+    
+    .module_information p:first-of-type {
+        padding: 13px 2px 13px 15px;
+        width: 100%;
     }
 
     .module_information{
@@ -1076,20 +1098,7 @@ p {
     
     .module_information .information{
         height: 100%;
-    }
-
-    .student_status .status{
         display: grid;
-        grid-template-columns: 17% auto auto auto;
-        align-items: center;
-        gap:10px ;
-        margin: 15px;
-    }
-    
-    .student_status button{
-        grid-column:auto;
-        margin: auto;
-        padding: 6px;
-        width: max-content;
+        grid-template-columns: 55% 45%;
     }
 }

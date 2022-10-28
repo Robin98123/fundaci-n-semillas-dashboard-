@@ -12,6 +12,7 @@
     --body-color: #F3F3F3;
 
     --border-radius-cards: 15px;
+    --transition: all 500ms ease;
 }
 
 * {
@@ -33,6 +34,7 @@ h4 {
 
 p {
     font-family: 'Playfair Display', serif;
+    font-size: 15px;
 }
 
 
@@ -44,8 +46,8 @@ p {
 
 .filters,
 .student_resume,
-.card_leaf_progress,
-.card-risk-indicator {
+.progress_statistics,
+.container-student_status{
     width: 95%;
     margin: 15px auto;
 }
@@ -55,6 +57,7 @@ p {
     grid-template-columns: 100%;
     gap: 10px;
     --border-radius-filter: 5px;
+    margin-top: 20px;
 }
 
 .filters .student,
@@ -71,6 +74,7 @@ p {
 .selectors {
     display: grid;
     grid-template-columns: 60% 40%;
+    margin-bottom: 20px;
 }
 
 .filters .student {
@@ -113,7 +117,7 @@ p {
 .card_student {
     background: var(--white);
     border-radius: var(--border-radius-cards);
-    padding: 10px;
+    padding: 15px;
 }
 
 .profile {
@@ -174,6 +178,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.layer_text:hover{
+    background: rgba(0, 0, 0, 0.632);
+    transform: scale(1.01);
+    transition: var(--transition);
 }
 
 .information_student {
@@ -192,6 +203,11 @@ p {
     text-decoration: none;
     color: var(--green-darker);
     border-bottom: 1px solid var(--green-darker);
+}
+
+.information_student a:hover{
+    color:#076942;
+
 }
 
 /*progress bar*/
@@ -340,6 +356,14 @@ p {
     font-size: 25px;
 }
 
+.progress_statistics{
+    display: grid;
+    gap: 15px;
+}
+
+.title-statistics{
+    margin-left: 2.5%;
+}
 
 /*-------card progress diplomat-------*/
 
@@ -419,7 +443,7 @@ p {
 
 .card-risk-indicator{
     background: var(--white);
-    height: 150px;
+    height: 155px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -579,8 +603,8 @@ p {
 /*----------Graphic progress---------*/
 
 .graphic-progress{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background: conic-gradient(#F95661 0deg, #F95661 36deg, #F8834E 36deg, #F8834E 72deg, #FBCE3E 72deg, #FBCE3E 108deg, #9ED77A 108deg, #9ED77A 144deg, #6AC96C 144deg, #6AC96C 180deg, white 180deg);
     transform: rotate(270deg);
     border-bottom-right-radius: 50%;
@@ -607,8 +631,8 @@ p {
 }
 
 .graphic-progress .pointer{
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     background: #868686;
     z-index: 1;
@@ -617,9 +641,9 @@ p {
 .triangle-pointer{
     width: 0; 
     height: 0; 
-    border-left: 30px solid #000000;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent; 
+    border-left: 25px solid #000000;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent; 
     position: absolute;
     right: 20px;
 }
@@ -633,7 +657,7 @@ p {
 }
 
 .module_information .information {
-    width: 95%;
+    width: 100%;
     background: var(--white);
     margin: auto;
     border-radius: var(--border-radius-cards);
@@ -795,13 +819,16 @@ p {
     margin-left: 20px;
 }
 
+.button_modal:hover{
+    background: var(--green-darker);
+    transition: all 500ms ease;
+}
 
 /*sección 4. resumen actividades, estatus estudiantes, calendario y eventos/Robinson*/
 
 /*---------student status---------*/
 
 .student_status{
-    width: 95%;
     background-color: var(--white);
     margin: auto;
     border-radius: var(--border-radius-cards);
@@ -846,6 +873,10 @@ p {
     margin-left: 5px;
 }
 
+.student_status .hide span{
+    color: #FF6A16;
+}
+
 .status .picture_profile{
     width: 50px;
     height: 50px;
@@ -859,4 +890,117 @@ p {
     display: none;
 }
 
+
 /*sección 5. footer/ Felipe*/
+
+.container-sidebar{
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .filters {
+        grid-template-columns: 100%;
+        width: 70%;
+        margin: 0;
+        margin: 20px 0 0 2.5%;
+    }
+
+    .student_resume {
+        display: grid;
+        grid-template-columns:58% auto;
+        gap: 15px;
+    }
+
+    .progress_statistics{
+        display: grid;
+        grid-template-columns: 53% auto;
+        row-gap: 15px;
+    }
+
+    .card_leaf_progress {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-progress{
+        margin: auto;
+    }
+
+    .module_information{
+        grid-column: span 2;
+        grid-template-columns: 53% auto;
+    }
+
+    .container-student_status{
+        width: 50%;
+    }
+
+}
+
+@media (min-width:1024px) {
+    
+.container-sidebar{
+    display: flex;
+    position: fixed;
+    background-color: #01b76d;
+    width: 225px;
+    height: 90vh;
+    border-radius:30px;
+    margin-top: 30px;
+}
+
+.filters {
+    width: 95%;
+    grid-template-columns: 45% auto;
+    max-width:none;
+    gap: 10px;
+}
+
+.selectors {
+    grid-template-columns: 70% 30%;
+}
+
+.student_status .hide{
+    display: grid;
+}
+
+
+#container-principal{
+    margin-left: 225px;
+}
+
+}
+
+@media (min-width:1200px) {
+
+    .progress_statistics{
+        grid-template-columns: 40% 30% auto;
+        row-gap: 15px;
+    }
+
+    .module_information{
+        grid-column: auto;
+        grid-template-columns: 100%;
+    }
+    
+    .module_information .information{
+        height: 100%;
+    }
+
+    .student_status .status{
+        display: grid;
+        grid-template-columns: 17% auto auto auto;
+        align-items: center;
+        gap:10px ;
+        margin: 15px;
+    }
+    
+    .student_status button{
+        grid-column:auto;
+        margin: auto;
+        padding: 6px;
+        width: max-content;
+    }
+}

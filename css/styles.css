@@ -160,6 +160,53 @@ p {
     margin-left: -25px;
 }
 
+.other_students img:nth-of-type(5){
+    animation: rotate-image 1s;
+}
+
+.other_students img:nth-of-type(4){
+    animation: rotate-image 1s 0.5s backwards;
+}
+
+.other_students img:nth-of-type(3){
+    animation: rotate-image 1s 1.2s backwards;
+}
+
+.other_students img:nth-of-type(2){
+    animation: rotate-image 1s 1.8s backwards;
+}
+
+.other_students img:nth-of-type(1){
+    animation: rotate-image 1s 2.5s backwards;
+}
+
+.other_students .layer_text{
+    animation: show-layer 4s 2s backwards;
+}
+
+@keyframes show-layer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-image {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .card_student img {
     border-radius: 50%;
     border: 5px solid var(--white)
@@ -623,11 +670,22 @@ p {
 .graphic-progress .circle{
     width: 78%;
     height: 78%;
+    transform: rotate(-3deg);
     background:var(--white);
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: pointer-rotate 2.5s .5s backwards;
+}
+
+@keyframes pointer-rotate {
+    0%{
+        transform: rotate(95deg);
+    }
+    100%{
+        transform: rotate(-4deg);
+    }
 }
 
 .graphic-progress .pointer{
@@ -743,7 +801,7 @@ p {
     margin: auto;
     background-color: white;
     width: 90%;
-    max-width: 950px;
+    max-width: 550px;
     max-height: 90%;
     overflow: hidden;
     text-align: center;
@@ -937,39 +995,70 @@ p {
         width: 50%;
     }
 
+    .modal_container{
+        overflow: auto;
+    }
+
+    .information_student .name{
+        text-align: left;
+    }
+
+    .modal_content{
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .program_information{
+        line-height: 1.5;
+    }
+
+    .modal_content p{
+        font-size: 16px;
+    }
+
+    .personal_information{
+        border-radius: var(--border-radius-cards);
+        margin-left: 29.5%;
+    }
+
+    .modal_content .other_students {
+        margin-top: 0;
+        max-height: 90px;
+    }
+
 }
 
 @media (min-width:1024px) {
     
-.container-sidebar{
-    display: flex;
-    position: fixed;
-    background-color: #01b76d;
-    width: 225px;
-    height: 90vh;
-    border-radius:30px;
-    margin-top: 30px;
-}
+    .container-sidebar{
+        display: flex;
+        position: fixed;
+        background-color: #01b76d;
+        width: 225px;
+        height: 90vh;
+        border-radius:30px;
+        margin-top: 30px;
+    }
 
-.filters {
-    width: 95%;
-    grid-template-columns: 45% auto;
-    max-width:none;
-    gap: 10px;
-}
+    .filters {
+        width: 95%;
+        grid-template-columns: 45% auto;
+        max-width:none;
+        gap: 10px;
+    }
 
-.selectors {
-    grid-template-columns: 70% 30%;
-}
+    .selectors {
+        grid-template-columns: 70% 30%;
+    }
 
-.student_status .hide{
-    display: grid;
-}
+    .student_status .hide{
+        display: grid;
+    }
 
 
-#container-principal{
-    margin-left: 225px;
-}
+    #container-principal{
+        margin-left: 225px;
+    }
 
 }
 

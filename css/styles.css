@@ -144,8 +144,8 @@ p {
     border-radius: 50%;
     border: 5px solid var(--white);
     position: absolute;
-    bottom: 12px;
-    right: 8px;
+    bottom: 7px;
+    right: -4px;
 }
 
 .card_student .profile_image {
@@ -745,6 +745,11 @@ p {
     .module_information p:first-of-type {
         width: 90%;
         font-size: 18px;
+    }
+
+    .profile p {
+        bottom: 12px;
+        right: 0px;
     }
 
 }

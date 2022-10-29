@@ -8,4 +8,4 @@ Este proyecto contiene un Demo de el dashboard  para la fundación semillas, don
 
 [![Atomic design progreso](https://i.postimg.cc/Zn9y4ngV/Frame-4.png "Atomic design progreso")](http://https://i.postimg.cc/Zn9y4ngV/Frame-4.png "Atomic design progreso")
 
-[![Atomic design barra de progreso](https://i.postimg.cc/MT3jCVsn/Frame-5.png "Atomic design barra de progreso")](https://i.postimg.cc/MT3jCVsn/Frame-5.png"Atomic design barra de progreso")
+[![Atomic design barra de progreso circular](https://i.postimg.cc/MT3jCVsn/Frame-5.png "Atomic design barra de progreso circular")](http://https://i.postimg.cc/MT3jCVsn/Frame-5.png "Atomic design barra de progreso circular")

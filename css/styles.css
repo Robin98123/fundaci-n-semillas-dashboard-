@@ -958,11 +958,6 @@ p {
     display: none;
 }
 
-.container-sidebar{
-    display: none;
-}
-
-
 @media (min-width:650px){
 
     .card-progress{
@@ -1035,16 +1030,6 @@ p {
 
 @media (min-width:1024px) {
     
-    .container-sidebar{
-        display: flex;
-        position: fixed;
-        background-color: #01b76d;
-        width: 225px;
-        height: 90vh;
-        border-radius:30px;
-        margin-top: 30px;
-    }
-
     .filters {
         width: 95%;
         grid-template-columns: 45% auto;

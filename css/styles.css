@@ -496,24 +496,51 @@ p{
 
 /* Calendario */
 
+.seccion-calendario-plaenador{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+
+    .seccion3-part2{
+        flex-direction: column;
+    }
+    
+}
+
 .seccion3-part2{
-    background-color: #02AD68;
+    background-color: transparent;
     display: flex;
     gap: 2rem;
     position: absolute;
+    align-items: center;
 }
 
+@media screen and (max-width: 760px) {
 
+    .calendario{
+        display: none;
+    }
+    
+}
 
 .calendario{
     width: 600px;
     height: 450px;
     background-color: rgb(255, 255, 255);
-    margin-top: 2rem;
+    margin-top: 4rem;
  position: relative;
  border-radius: 20px;
  box-shadow: 3px 4px 10px 1px #bcbcbc;
 }
+
+        .titulo-calendario{
+            margin-top: -3rem;
+            position: relative
+        
+        }
 
         .contenido_calendario{
             padding-top: 30px;
@@ -754,15 +781,399 @@ p{
             border-radius: 10px;
         }
 
+                            /*calendario mobile*/
+
+                            @media screen and (min-width: 760px) {
+
+                                .calendario-mobile{
+                                    display: none;
+                                }
+                                
+                            }
+
+                            .calendario-mobile{
+                                width: 360px;
+                                height: 450px;
+                                background-color: rgb(255, 255, 255);
+                                margin-top: 4rem;
+                            position: relative;
+                            border-radius: 20px;
+                            box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .titulo-calendario_mobile{
+                                margin-top: -3rem;
+                                position: relative
+                            
+                            }
+
+                            .contenido_calendario-mobile{
+                                padding-top: 75px;
+                                padding-left: 45px;
+                            }
+
+                            .calendario-dia-mobile{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: -390px;
+                                margin-left: -1rem;
+                                gap: 0.5rem;
+                            }
+
+                            .calendario-dia_24-mobile{
+                                width: 50px;
+                                height: 50px;
+                                background-color: #ffffff;
+                                border-radius: 15px;
+                                position: relative;
+                                box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .calendario-dia_24-mobile h1{
+                                font-size: 20px;
+                                margin-left: 0.8rem;
+                            }
+
+                            .calendario-dia_24-mobile p{
+                                font-size: 15px;
+                                margin-left: 0.8rem;
+                            }
+
+                            .lineas-mobile{
+                                position: relative;
+                                margin-top: -3.5rem;
+                                margin-left: 2.8rem;
+                                color: rgb(217, 215, 215);
+                            }
+
+                            .lineas-verticales-mobile{
+                                position: relative;
+                                color: rgb(217, 215, 215);
+                                margin-top: 0px;
+                                margin-left: -50px;
+                            }
+
+                            .lineas-verticales-mobile h1{
+                                margin-bottom: 1rem;
+                            }
+
+
+                            .tarjetas-blancas-mobile{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2rem;
+                                opacity: 0;
+                                animation-duration: 1seg;
+                                margin-top: -26rem;
+                            }
+
+                            .tarjetas-blancas-mobile:hover{
+                                opacity: 1;
+                                transition: opacity 1s ease 0s;
+                                
+                            }
+
+                            /*tarejta 1-calendario*/
+
+                            .calendario-tarjeta-mobile{
+                                position: relative;
+                                width: 200px;
+                                height: 50px;
+                                background-color: #ffffff;
+                                margin-left: 4rem;
+                                margin-top: 1rem;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                padding-left: 10px;
+                                padding-top: 2px;
+                                box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .calendario-tarjeta-mobile:hover{
+                                background-color: #fbf6d0;
+                            }
+
+                            .calendario-tarjeta_marcador-mobile{
+                                width: 6px;
+                                height: 40px;
+                                background-color: #B741FF;
+                                border-radius: 0px 0px  5px 0px ;
+                            }
+
+                            .calendario-tarjeta-mobile h1{
+                                font-size: 15px;
+                            }
+
+                            .calendario-tarjeta_imagen-mobile{
+                                width: 60px;
+                                height: 30px;
+                                background-image: url("../img/leccion1.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                border-radius: 10px;
+                            }
+
+                            /*tarejta 2-calendario*/
+
+                            .calendario-tarjeta_2-mobile{
+                                position: relative;
+                                width: 200px;
+                                height: 50px;
+                                background-color: #ffffff;
+                                margin-left: 4rem;
+                                margin-top: 1rem;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                padding-left: 10px;
+                                padding-top: 2px;
+                                box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .calendario-tarjeta_2-mobile:hover{
+                                background-color: #fbf6d0;
+                            }
+
+                            .calendario-tarjeta_marcador2-mobile{
+                                width: 6px;
+                                height: 40px;
+                                background-color: #FFC700;
+                                border-radius: 0px 0px  5px 0px ;
+                            }
+
+                            .calendario-tarjeta_2-mobile h1{
+                                font-size: 15px;
+                            }
+
+                            .calendario-tarjeta_imagen2-mobile{
+                                width: 60px;
+                                height: 30px;
+                                background-image: url("../img/leccion2.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                border-radius: 10px;
+                            }
+
+                            /*tarejta 3-calendario*/
+
+                            .calendario-tarjeta_3-mobile{
+                                position: relative;
+                                width: 200px;
+                                height: 50px;
+                                background-color: #ffffff;
+                                margin-left: 4rem;
+                                margin-top: 1rem;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                padding-left: 10px;
+                                padding-top: 2px;
+                                box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .calendario-tarjeta_3-mobile:hover{
+                                background-color: #fbf6d0;
+                            }
+
+                            .calendario-tarjeta_marcador3-mobile{
+                                width: 6px;
+                                height: 40px;
+                                background-color: #639E2E;
+                                border-radius: 0px 0px  5px 0px ;
+                            }
+
+                            .calendario-tarjeta_3-mobile h1{
+                                font-size: 15px;
+                            }
+
+                            .calendario-tarjeta_imagen3-mobile{
+                                width: 60px;
+                                height: 30px;
+                                background-image: url("../img/Leccion3.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                border-radius: 10px;
+                            }
+
+                            /*tarejta 4-calendario*/
+
+                            .calendario-tarjeta_4-mobile{
+                                position: relative;
+                                width: 200px;
+                                height: 50px;
+                                background-color: #ffffff;
+                                margin-left: 4rem;
+                                margin-top: 1rem;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                padding-left: 10px;
+                                padding-top: 2px;
+                                box-shadow: 3px 4px 10px 1px #bcbcbc;
+                            }
+
+                            .calendario-tarjeta_4-mobile:hover{
+                                background-color: #fbf6d0;
+                            }
+
+                            .calendario-tarjeta_marcador4-mobile{
+                                width: 6px;
+                                height: 40px;
+                                background-color: #4154FF;
+                                border-radius: 0px 0px  5px 0px ;
+                            }
+
+                            .calendario-tarjeta_4-mobile h1{
+                                font-size: 15px;
+                            }
+
+                            .calendario-tarjeta_imagen4-mobile{
+                                width: 60px;
+                                height: 30px;
+                                background-image: url("../img/Lección4.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                border-radius: 10px;
+                            }
+
+
+
+        @media screen and (max-width: 760px) {
+
+            
+            
+        }
+
     .planeador{
         width: 250px;
         height: 450px;
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-left: 0px;
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
         box-shadow: 3px 4px 10px 1px #bcbcbc;
     }
 
+    .titulo{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+        .calendario-tarjeta_marcador1-planeador{
+            width: 6px;
+            height: 60px;
+            background-color: #B741FF;
+            border-radius: 0px 0px  5px 0px ;
+        }
+
+            .calendario-tarjeta_marcador2-planeador{
+                width: 6px;
+                height: 60px;
+                background-color: #4154FF;
+                border-radius: 0px 0px  5px 0px ;
+            }
+
+                .calendario-tarjeta_marcador3-planeador{
+                    width: 6px;
+                    height: 60px;
+                    background-color: #FFC700;
+                    border-radius: 0px 0px  5px 0px ;
+                }
+
+                    .calendario-tarjeta_marcador4-planeador{
+                        width: 6px;
+                        height: 60px;
+                        background-color: #639E2E;
+                        border-radius: 0px 0px  5px 0px ;
+                    }
+
+
+    .planeador h1{
+        font-size: 20px;
+    }
+
+    .planeador p{
+        font-family:  'Dosis', sans-serif;
+        font-size: 18px;
+    }
+
+    .marcador-horario1{
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+        .marcador-horario2{
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+            .marcador-horario3{
+                display: flex;
+                gap: 1.5rem;
+                margin-top: 1rem;
+            }
+
+                .marcador-horario4{
+                    display: flex;
+                    gap: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+    .texto-horario_1 h2{
+        font-family:  'Dosis', sans-serif;
+        font-size: 18px;
+        color: #B741FF;
+    }
+
+        .texto-horario_2 h2{
+            font-family:  'Dosis', sans-serif;
+            font-size: 18px;
+            color: #4154FF;
+        }
+
+            .texto-horario_3 h2{
+                font-family:  'Dosis', sans-serif;
+                font-size: 18px;
+                color: #FFC700;
+            }
+
+                .texto-horario_4 h2{
+                    font-family:  'Dosis', sans-serif;
+                    font-size: 18px;
+                    color: #639E2E;
+                }
+
+
+
+    .texto-horario_1 p{
+        font-family:  'Dosis', sans-serif;
+        font-size: 16px;
+    }
+
+
+
+    .puntos{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .puntos div{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #c8c8c8;
+    }
 
 /*sección 5. footer/ Felipe*/

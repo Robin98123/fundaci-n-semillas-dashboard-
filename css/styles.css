@@ -46,67 +46,152 @@ p {
 
 /*sección 1. barra de navegación lateral/ Felipe*/
 
-
-
-
-.container-sidebar{
-  background-color: #01b76d;
-  width: 225px;
-  height: 90vh;
-  border-radius:30px;
-  margin-top: 30px;
-  position: fixed;
-}
-.container-sidebar .logo{
-  position:fixed;
-  top:15px;
-  left: 25px;
-  width: 170px;
-  height: 40px;
-  margin: auto;
-  background-color: #f3f3f3;
-  text-align: center;
-  border-radius:20px;
-}
-.container-sidebar .logo img{
-  display: inline-block;
-  margin-left: 5px;
-  padding-right: 0;
-  margin-right: 0;
-  width: 40px;
-  height: 39px;
-}
-.container-sidebar .logo span{
-  display:inline-block;
-  font-size: 12px;
-}
-.container-sidebar .title-one{
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
-.container-sidebar .title-one h1{
-  color:#fff;
-  font-weight: 400;
-}
-.container-sidebar .title-one span{
-  font-weight: 800;
-  color:#fff;
-}
-.container-sidebar .img-sidebar{
-  margin-bottom: 30px;
-  text-align: center;
-}
-.container-sidebar .img-profile img{
-  display:block;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: auto;
+.container-sidebar {
+    background-color: #01b76d;
+    width: 225px;
+    height: 100vh;
+    border-radius: 30px;
+    margin-top: 30px;
+    position: fixed;
+    color: var(--white);
+    font-family: 'Dosis', sans-serif;
 }
 
-@media (max-width:1024px) {
+.container-sidebar .logo {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.container-sidebar .logo img {
+    display: inline-block;
+    margin-left: 10px;
+    padding-right: 10px;
+    margin-right: 0;
+    width: 40px;
+    height: 39px;
+}
+
+.container-sidebar .logo p {
+    font-size:11px;
+    padding: 1.5px;
+    color: var(--green-darker);
+}
+
+.container-sidebar .title-one {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.container-sidebar .title-one h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.container-sidebar .title-one span {
+    font-weight: 800;
+    color: #fff;
+}
+
+.container-sidebar .img-sidebar {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container-sidebar .img-profile img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.266);
+}
+
+.container-sidebar .img-profile p{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container-sidebar .title-two{
+    margin: 12% 5% 5% 10%;
+    font-size: 19px;
+}
+
+.container-sidebar .sidebar{
+    width: 100%;
+    margin: auto;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 19px;
+}
+
+.container-sidebar .sidebar-options{
+    width: 90%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container-sidebar .sidebar-options a{
+    color: white;
+}
+
+.container-sidebar .sidebar-options li{
+    padding: 5px 5px 5px 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+.container-sidebar .sidebar-options li:first-of-type,
+.container-sidebar .sidebar-options li:hover{
+    background-color: rgba(255, 255, 255, 0.65);
+    border-left: 4px solid var(--green-darker);
+    color: var(--green-darker);
+    transition: all 200ms ease;
+}
+
+.container-sidebar .sidebar-options a{
+    color:var(--green-darker)
+}
+
+.img-buttom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin:20px auto;
+    text-align: center;
+    background: url('../img/sidebar-image.png') center/cover;
+}
+
+.img-buttom span{
+    margin-top: 5px;
+    width: 80%;
+    text-shadow: 0px 1px 2px black;
+}
+
+.img-buttom button{
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    background: var(--white);
+    font-size: 17px;
+    color: var(--green-darker);
+}
+
+@media (max-width:1023px) {
     aside{
         display: none;
     }

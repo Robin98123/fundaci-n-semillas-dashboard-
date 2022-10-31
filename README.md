@@ -4,13 +4,19 @@ Este proyecto contiene un Demo de el dashboard  para la fundación semillas, don
 
 #### 1.Sección barra de navegación superior
 
+prevew
+[![code.png](https://i.postimg.cc/CLG6wzgy/code.png)](https://postimg.cc/xcdPRj8g)
+
 ------------
 
 1.1. buscador:
 
-**HTML**
+prevew:
+[![code.png](https://i.postimg.cc/QxzVxxkb/code.png)](https://postimg.cc/QHpjfDz9)
 
 ------------
+
+**HTML**
 
 [![code.png](https://i.postimg.cc/h47FxD9v/code.png)](https://postimg.cc/LhR0FMQF)
 
@@ -21,8 +27,13 @@ Este proyecto contiene un Demo de el dashboard  para la fundación semillas, don
 
 1.2. iconos:
 
-**HTML**
+prevew:
+[![code.png](https://i.postimg.cc/DyRy3pnp/code.png)](https://postimg.cc/6yLNd07C)
+
 ------------
+
+**HTML**
+
 [![code.png](https://i.postimg.cc/P5C1fRgg/code.png)](https://postimg.cc/qNdNjjMw)
 
 **CSS**
@@ -32,6 +43,10 @@ Este proyecto contiene un Demo de el dashboard  para la fundación semillas, don
 #### 2.Sección banner principal
 
 2.1 banner:
+
+prevew:
+[![code.png](https://i.postimg.cc/xTPDtsqb/code.png)](https://postimg.cc/CzdQKsGF)
+------------
 
 HTML
 
@@ -43,7 +58,15 @@ CSS
 
 #### 4.Sección Slider Resumen de actividades, estatus de los estudiantes, calendario y planeador
 
+prevew:
+[![code.png](https://i.postimg.cc/yYN4pmRQ/code.png)](https://postimg.cc/YjTshmbY)
+------------
+
 4.1 slider resumen de actividades
+
+prevew:
+[![code.png](https://i.postimg.cc/pVDgL0f1/code.png)](https://postimg.cc/kDgjjvhx)
+------------
 
 HTML
 
@@ -55,6 +78,10 @@ CSS
 
 4.3 calendario
 
+prevew
+[![code.png](https://i.postimg.cc/V65jCKvt/code.png)](https://postimg.cc/gXFX9qvc)
+------------
+
 HTML
 
 [![code.png](https://i.postimg.cc/m2HF0H74/code.png)](https://postimg.cc/yk7dRWfp)
@@ -64,6 +91,10 @@ CSS
 [![code.png](https://i.postimg.cc/J4LkChxB/code.png)](https://postimg.cc/NLdM1BWg)
 
 4.4. planeador
+
+prevew
+[![code.png](https://i.postimg.cc/3rvGQ4v3/code.png)](https://postimg.cc/bdqrQvg5)
+------------
 
 HTML
 

@@ -2792,10 +2792,21 @@ p {
 
 
 /*sección 5. footer/ Felipe*/
+.footer {
+position: absolute;
+width: 1033px;
+height: 70px;
+left: 374px;
+top: 2133px;
+}
+.footer .container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .gg-facebook {
   box-sizing: border-box;
   position: relative;
-  display: block;
+  display: inline-block;
   transform: scale(var(--ggs,1));
   width: 20px;
   height: 20px
@@ -2804,7 +2815,7 @@ p {
  .gg-facebook::after,
  .gg-facebook::before {
   content: "";
-  display: block;
+  display: inline-block;
   position: absolute;
   box-sizing: border-box
  }
@@ -2832,7 +2843,7 @@ p {
  .gg-instagram {
   box-sizing: border-box;
   position: relative;
-  display: block;
+  display: inline-block;
   transform: scale(var(--ggs,1));
   border: 2px solid transparent;
   box-shadow: 0 0 0 2px;
@@ -2871,7 +2882,7 @@ p {
  .gg-twitter {
   box-sizing: border-box;
   position: relative;
-  display: block;
+  display: inline-block;
   transform: scale(var(--ggs,1));
   width: 20px;
   height: 20px

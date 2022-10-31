@@ -152,7 +152,105 @@ En cuanto a los elementos que se muestran y/u ocultan, para ello fue necesario i
 	}
 }
 ```
-
+## Tarjeta de progreso del diplomado
 [![Atomic design progreso](https://i.postimg.cc/Zn9y4ngV/Frame-4.png "Atomic design progreso")](http://https://i.postimg.cc/Zn9y4ngV/Frame-4.png "Atomic design progreso")
 
-[![Atomic design barra de progreso circular](https://i.postimg.cc/MT3jCVsn/Frame-5.png "Atomic design barra de progreso circular")](http://https://i.postimg.cc/MT3jCVsn/Frame-5.png "Atomic design barra de progreso circular")
+Cada hojita (átomo) no es más que un contenedor vacío, con otro en su interior de características similares. Al estar lista la primera, las otras fueron réplicas de esta, cambiando únicamente la clase que correspondería al color específico de cada una.
+
+```html
+<article class="card-progress">
+	<div class="leaf-progress">
+		<div class="container-leaf">
+			<div class="leaf green-darker"></div>
+			<div class="leaf leaf-small"></div>
+		</div>
+		<div class="container-leaf">
+			<div class="leaf green-medium"></div>...
+		</div>
+		<div class="container-leaf">
+			<div class="leaf green-light"></div>...
+		</div>
+		<div class="container-leaf">
+			<div class="leaf gray"></div>...
+		</div>
+		...
+	</div>
+</article>
+```
+
+Retomando lo anteriormente dicho, todas las hojas contienen unas propiedades y valores iguales, a grandes rasgos no es más que un cuadrado, con bordes redondeados y una rotación del mismo para dar ese efecto de rombo-hojita. En cuanto a las pequeñas hojitas en su interior, poseen una clase adicional para establecer aquellos valores diferentes (altura, color y tamaño del bordeado).
+```css
+/*Todas las hojas*/
+.leaf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    border-radius: 0 30px 0 30px;
+    border: 2px solid var(--white);
+}
+
+/*hojas pequeñas*/
+.leaf-small {
+    background: rgb(255, 255, 255);
+    width: 28px;
+    height: 28px;
+    border-radius: 0 20px 0 20px;
+}
+```
+
+## Modal
+> Se accede a él mediante el enlace en la tarjeta del estudiante que referencia la seeción del modal.
+```html
+<a href="#modal">Ver perfil completo</a>
+```
+[![Modal](https://i.postimg.cc/sgRfvXKD/image.png "Modal")](http://https://i.postimg.cc/sgRfvXKD/image.png "Modal")
+
+> Se cierra a través de la x puesta como enlace en la cabecera del modal.
+```html
+<a href="#card_student" class="modalClose"><strong>x</strong></a>
+```
+
+En cuanto al modal, resulta ser una modificación de la tarjeta del estudiante, en la que se añaden unos datos extra, pero se mantiene su estructura base.
+```html
+<section id="modal" class="modal">
+    <div class="modal_container">
+        <div class="modal_header">
+		<a href="#card_student" class="modalClose"><strong>x</strong></a>
+	</div>
+	<div class="modal_content card_student">...
+		<div class="program_information">...</div>
+		<button class="button_modal">Revisar Dash</button>
+		<div class="other_students">
+			<img src="img/avatar_1.jpg" alt="Estudiante 1">...
+			<div class="layer_text">+12</div>
+		</div>
+	</div>
+    </div>
+</section>
+```
+
+Fue útil aquí usar la pseudoclase ":target" para determinar en qué momento el modal debe hacerse visible cambiando no solo su opacidad, sino convirtiéndose además en objetivo del puntero. El modal siempre permanece ahí, pero solo hasta que se pulse sobre el enlace, éste podra hacerse visible.
+
+```css
+.modal{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    --opacity:0;
+    --pointer:none;
+
+    opacity:var(--opacity);
+
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target{
+    --opacity:1;
+    --pointer:unset;
+}
+```

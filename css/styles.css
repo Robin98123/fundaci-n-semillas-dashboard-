@@ -50,7 +50,7 @@ p {
     justify-content: space-between;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 760px) {
@@ -396,15 +396,15 @@ p {
     margin-top: 7px;
 }
 
-/*@media screen and (max-width: 760px) {
+@media screen and (max-width: 480px) {
 
-    .banner-principal{
-        max-width: 600px;
+    .idioma, .triangulo_1{
+        display: none;
     }
     
 }
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
 
     .banner-principal{
         max-width: 450px;
@@ -441,7 +441,8 @@ p {
 .progress_statistics,
 .banner-principal,
 .lecciones-status,
-.seccion-calendario-plaenador{
+.seccion-calendario-plaenador,
+.elementos_header{
     width: 95%;
     margin: 15px auto;
 }
@@ -1451,7 +1452,7 @@ p {
     
     .filters {
         width: 95%;
-        grid-template-columns: 45% auto;
+        grid-template-columns: 42% auto;
         max-width:none;
         gap: 22px;
     }
@@ -1555,6 +1556,10 @@ p {
     .lecciones-status{
         display: grid;
         grid-template-columns: 100%;
+    }
+
+    .container-student_status{
+        margin-top: 20px;
     }
     
 }
@@ -1673,10 +1678,10 @@ p {
             display: flex;
             gap: 2rem;
             position: absolute;
-            align-items: center;
+            align-items: flex-end;
         }
         
-        @media screen and (max-width: 760px) {
+        @media screen and (max-width: 1024px) {
         
             .calendario{
                 display: none;
@@ -2003,6 +2008,7 @@ p {
                                         margin-top: -3.5rem;
                                         margin-left: 2.8rem;
                                         color: rgb(217, 215, 215);
+                                        text-align: center;
                                     }
         
                                     .lineas-verticales-mobile{
@@ -2203,19 +2209,40 @@ p {
                                         background-position: center;
                                         border-radius: 10px;
                                     }
+
+                                    
         
-        
-        
-                @media screen and (max-width: 760px) {
-        
-                    
-                    
-                }
+                                    @media (max-width:800px) {
+                                        .calendario-tarjeta-mobile, .calendario-tarjeta_2-mobile, .calendario-tarjeta_3-mobile, .calendario-tarjeta_4-mobile{
+                                            margin-left: 3rem;
+                                    }
+
+                                    .seccion3-part2{
+                                        width: 95%;
+                                    }
+
+                                    .calendario-mobile{
+                                        width: 100%;
+                                    }
+
+                                    .contenido_calendario-mobile{
+                                        padding-left: 25px;
+                                    }
+
+                                }
+
+                                @media (min-width:600px) and (max-width:800px){
+                                    .seccion3-part2{
+                                        display: grid;
+                                        grid-template-columns: 53% auto;
+                                    }
+
+                                }
         
             .planeador{
                 width: 250px;
                 height: 450px;
-                margin-top: 4rem;
+                margin-top: 15px;
                 margin-left: 0px;
                 background-color: rgb(255, 255, 255);
                 border-radius: 20px;
@@ -2287,6 +2314,27 @@ p {
                             display: flex;
                             gap: 1.5rem;
                             margin-top: 1rem;
+                        }
+
+                        @media (max-width:800px) {
+
+                            .planeador{
+                                width: 100%;
+                            }
+            
+                            .marcador-horario1,
+                            .marcador-horario2,
+                            .marcador-horario3,
+                            .marcador-horario4{
+                                display: grid;
+                                grid-template-columns: 6px 75% auto;
+                            }
+                        }
+
+                        @media (max-width:1024px) {
+                            .calendario-mobile{
+                                display: block;
+                            }
                         }
         
             .texto-horario_1 h2{

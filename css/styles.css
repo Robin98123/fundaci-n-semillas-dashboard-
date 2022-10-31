@@ -29,8 +29,8 @@ p{
 .container-sidebar{
   position: fixed;
   background-color: #01b76d;
-  width: 225px;
-  height: 90%;
+  width: 250px;
+  height: 1600px;
   border-radius:30px;
   margin-top: 30px;
 }
@@ -47,15 +47,21 @@ p{
 }
 .container-sidebar .logo img{
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 3px;
   padding-right: 0;
   margin-right: 0;
   width: 40px;
   height: 39px;
 }
 .container-sidebar .logo span{
-  display:inline-block;
-  font-size: 12px;
+  float: right;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #01b76d;
+  font-family: 'Dosis', sans-serif;
 }
 .container-sidebar .title-one{
   display: block;
@@ -82,7 +88,122 @@ p{
   border-radius: 50%;
   margin: auto;
 }
-.container-sidebar .img-sidebar
+.container-sidebar .img-profile span{
+
+position: absolute;
+width: 40px;
+height: 21px;
+font-family: 'Dosis';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+display: inline-block;
+left: 25%;
+color: #FFFFFF;
+
+}
+.container-sidebar .title-two span{
+position: absolute;
+display: inline-block;
+left: 5px;
+width: 193px;
+height: 26px;
+margin-top: 40px;
+font-family: 'Dosis';
+font-style: normal;
+font-weight: 700;
+font-size: 31px;
+line-height: 39px;
+
+color: #FFFFFF;
+}
+.sidebar .sidebar-options li{
+display: inline-block;
+width: 200px;
+height: 34px;
+}
+
+
+.sidebar .sidebar-options{
+margin-top: 80px;
+position: absolute;
+display: inline-block;
+
+}
+.sidebar-options li:hover{
+  width: 200px;
+  height: 34px;
+  background-color: rgb(205, 206, 205);
+  color: #01b76d;
+  border-radius: 10px;
+
+}
+.img-buttom{
+  margin-top: 300px;
+  text-align: center;
+}
+.gg-calendar-today {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  border-top: 4px solid;
+  border-radius: 3px
+ }
+ 
+ .gg-calendar-today::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  background: currentColor;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  right: 2px;
+  bottom: 2px
+ } 
+ .gg-microsoft {
+  transform: scale(var(--ggs,1))
+ }
+ 
+ .gg-microsoft,
+ .gg-microsoft::after,
+ .gg-microsoft::before {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px
+ }
+ 
+ .gg-microsoft::after,
+ .gg-microsoft::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  border-top: 8px solid;
+  border-bottom: 8px solid
+ }
+ 
+ .gg-microsoft::after {
+  right: 0
+ } 
+ .gg-toolbar-top {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  height: 12px;
+  box-shadow: 0 0 0 2px, inset 0 2px 0;
+  border: 2px solid transparent;
+  border-radius: 1px
+ } 
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
 
 /*sección 3. filtros, i card estudiante, indicador de emociones, estadisticas/Angela*/

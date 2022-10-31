@@ -45,13 +45,17 @@ p {
 
 
 /*sección 1. barra de navegación lateral/ Felipe*/
+
+
+
+
 .container-sidebar{
-  position: fixed;
   background-color: #01b76d;
   width: 225px;
   height: 90vh;
   border-radius:30px;
   margin-top: 30px;
+  position: fixed;
 }
 .container-sidebar .logo{
   position:fixed;
@@ -103,10 +107,18 @@ p {
 }
 
 @media (max-width:1024px) {
-    .container-sidebar{
+    aside{
         display: none;
     }
 }
+
+@media (min-width:1024px) {
+    body{
+        display: grid;
+        grid-template-columns: 225px auto;
+    }
+    
+    }
 
 /*sección 2. buscador, barra de navegación,banner superior/Robinson*/
 
@@ -125,7 +137,7 @@ p {
 }
 
 .barra-buscador{
-    margin-top: 3rem;
+    margin-top: .8rem;
 }
 
         @media screen and (max-width: 1398px) {
@@ -196,7 +208,7 @@ p {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 760px) {
@@ -421,7 +433,7 @@ p {
 }
 
 .nav-parte-2{
-    margin-top: 3rem;
+    margin-top: 1.4rem;
     display: flex;
     gap: 1rem;
 }
@@ -486,7 +498,7 @@ p {
     background-position: bottom;
     border-radius: 15px;
     filter: drop-shadow(1px 0px 5px rgb(173, 173, 173));
-    padding-top: 30px;
+    padding-top: 15px;
     margin: 0% auto;
 }
 
@@ -876,7 +888,7 @@ p {
     background-color: var(--white);
     border-radius: var(--border-radius-cards);
     padding-top: 15px;
-    height: 180px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     filter: var(--filter-cards);
@@ -961,7 +973,7 @@ p {
 
 .card-risk-indicator{
     background: var(--white);
-    height: 180px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -976,12 +988,12 @@ p {
 .emojis-progress{
     display: flex;
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     height: 40px;
 }
 
 .emoji{
-    width: 35px;
+    width: 40px;
     padding: 5px 0 10px;
     border-radius: var(--border-circular);
     border: 2.5px solid #F95661;
@@ -1015,8 +1027,8 @@ p {
 }
 
 #a, #b, #c, #d, #e{
-    width: 2.5px;
-    height: 1.8px;
+    width: 6px;
+    height: 3px;
     border: 1.8px solid #F95661;
     position: absolute;
     top:45%;
@@ -1119,8 +1131,8 @@ p {
 /*----------Graphic progress---------*/
 
 .graphic-progress{
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     background: conic-gradient(#F95661 0deg, #F95661 36deg, #F8834E 36deg, #F8834E 72deg, #FBCE3E 72deg, #FBCE3E 108deg, #9ED77A 108deg, #9ED77A 144deg, #6AC96C 144deg, #6AC96C 180deg, white 180deg);
     transform: rotate(270deg);
     border-radius:0 50% 50% 0;
@@ -1136,8 +1148,8 @@ p {
 }
 
 .graphic-progress .circle{
-    width: 78%;
-    height: 78%;
+    width: 85px;
+    height: 85px;
     transform: rotate(-3deg);
     background:var(--white);
     border-radius: var(--border-circular);
@@ -1171,7 +1183,7 @@ p {
     border-top: 12.5px solid transparent;
     border-bottom: 12.5px solid transparent; 
     position: absolute;
-    right: 20px;
+    right: 15px;
 }
 
 
@@ -1578,7 +1590,7 @@ p {
     
     .module_information p:first-of-type {
         padding: 13px 2px 13px 15px;
-        width: 100%;
+        width: 110%;
     }
 
     .module_information{
@@ -2447,11 +2459,7 @@ p {
                 background-color: #c8c8c8;
             }        
 
-@media (min-width: 1024px) {
-    main, header{
-        margin-left: 225px;
-    }  
-}
+
 
 
 /*sección 5. footer/ Felipe*/

@@ -254,3 +254,53 @@ Fue útil aquí usar la pseudoclase ":target" para determinar en qué momento el
     --pointer:unset;
 }
 ```
+
+## Indicador de riesgos
+[![Indicador de riesgos](https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")](http://https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")
+
+Para esta sección se tiene un circulo base el cual es el indicador de colores, dentro otro contenedor circular que contiene el puntero. Y finalmente la sección de los emojis, los cuales siguen una misma estructura (Carita, ojos, boca)
+
+```html
+<div class="graphic-progress">
+    <div class="circle">
+        <div class="pointer"></div>
+        <div class="triangle-pointer"></div>
+    </div>
+</div>
+<article class="emojis-progress">
+    <div class="emoji">
+         <div class="eyes"><p>></p><p><</p></div>
+               <div class="emoji-mouth">
+                    <div id="a"></div>
+                    <div id="b"></div>
+                    <div id="c"></div>
+                    <div id="d"></div>
+                    <div id="e"></div>
+               </div>
+        </div>
+        <div class="emoji happy">
+               <div class="eyes"><p></p><p></p></div>
+               <div class="emoji-mouth m-auto"> </div>
+        </div>
+        <div class="emoji superhappy">
+               <div class="eyes"><p></p><p></p></div>
+         <div class="emoji-mouth m-auto"> 
+        </div>
+     </div>
+</article>
+```
+
+En cuanto al indicador en colores, se usó un "conic-gradient", con el cual, como su nombre lo indica, distribuj
+```css
+.graphic-progress{
+    height: 110px;
+    width: 110px;
+    background: conic-gradient(#F95661 0deg, #F95661 36deg, #F8834E 36deg, #F8834E 72deg, #FBCE3E 72deg, #FBCE3E 108deg, #9ED77A 108deg, #9ED77A 144deg, #6AC96C 144deg, #6AC96C 180deg, white 180deg);
+    transform: rotate(270deg);
+    border-radius:0 50% 50% 0;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```

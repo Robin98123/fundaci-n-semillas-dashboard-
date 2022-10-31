@@ -290,7 +290,8 @@ Para esta sección se tiene un circulo base el cual es el indicador de colores, 
 </article>
 ```
 
-En cuanto al indicador en colores, se usó un "conic-gradient", con el cual, como su nombre lo indica, distribuj
+En cuanto al indicador de colores, se usó un "conic-gradient", con el cual, como su nombre lo indica, distribuye los colores en forma de cono, tomando en cuanto el grado que se les asigne. Importante aquí establecer para un mismo color, el ángulo de inicio y de finzalización para que logre un corte recto, de lo contrario mezclará los colores entre si generando un efecto degradé. Debido a que comienza a agregar colores desde un ángulo específico, se optó por rotar el circulo para lograr la posición adecuada.
+
 ```css
 .graphic-progress{
     height: 110px;
@@ -302,5 +303,27 @@ En cuanto al indicador en colores, se usó un "conic-gradient", con el cual, com
     display: flex;
     align-items: center;
     justify-content: center;
+}
+```
+
+Respecto al puntero, este es una composición de un círculo y un triángulo (Creado a partir de bordes), los cuales se ajustan a través de position absolute en su contenedor padre.
+
+```css
+.graphic-progress .pointer{
+    height: 25px;
+    width: 25px;
+    border-radius: var(--border-circular);
+    background: #868686;
+    z-index: 1;
+}
+
+.triangle-pointer{
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid #000000;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent; 
+    position: absolute;
+    right: 15px;
 }
 ```

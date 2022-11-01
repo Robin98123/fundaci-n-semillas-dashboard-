@@ -376,6 +376,172 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
 ```
 Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
 
+[![Imagen sidebar](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/sidebar-readme.png "Inmagen sidebar")](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/sidebar-readme.png "Imagen sidebar")
+```css
+.gg-microsoft {
+  transform: scale(var(--ggs,1));
+  margin-right: 10px;
+ }
+ 
+ .gg-microsoft,
+ .gg-microsoft::after,
+ .gg-microsoft::before {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px
+ }
+ 
+ .gg-microsoft::after,
+ .gg-microsoft::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  border-top: 8px solid;
+  border-bottom: 8px solid
+ }
+ 
+ .gg-microsoft::after {
+  right: 0
+ } 
+ .gg-toolbar-bottom {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  height: 12px;
+  box-shadow: 0 0 0 2px, inset 0 -2px 0;
+  border: 2px solid transparent;
+  border-radius: 1px;
+  margin-right: 10px;
+ } 
+ .gg-user-list {
+  margin-right: 10px;
+  display: inline-block;
+  transform: scale(var(--ggs,1));
+  box-sizing: border-box;
+  width: 20px;
+  height: 18px;
+  background:
+  linear-gradient(
+  to left,
+  currentColor 8px,
+  transparent 0)
+  no-repeat 14px 4px/6px 2px,
+  linear-gradient(
+  to left,
+  currentColor 8px,
+  transparent 0)
+  no-repeat 14px 8px/6px 2px,
+  linear-gradient(
+  to left,
+  currentColor 8px,
+  transparent 0)
+  no-repeat 14px 12px/6px 2px
+ }
+ 
+ .gg-user-list::after,
+ .gg-user-list::before {
+  content: "";
+  display:inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid
+ }
+ 
+ .gg-user-list::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 30px;
+  top: 0;
+  left: 2px
+ }
+ 
+ .gg-user-list::after {
+  width: 12px;
+  height: 9px;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  top: 9px
+ } 
+ .gg-user {
+  display: block;
+  transform: scale(var(--ggs,1));
+  box-sizing: border-box;
+  width: 12px;
+  height: 18px
+ }
+ 
+ .gg-user::after,
+ .gg-user::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid
+ }
+ 
+ .gg-user::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 30px;
+  top: 0;
+  left: 2px
+ }
+ 
+ .gg-user::after {
+  width: 12px;
+  height: 9px;
+  border-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  top: 9px
+ }  .gg-user {
+  margin-right: 10px;
+ display: inline-block;
+ transform: scale(var(--ggs,1));
+ box-sizing: border-box;
+ width: 12px;
+ height: 18px
+}
+
+.gg-user::after,
+.gg-user::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ border: 2px solid
+}
+
+.gg-user::before {
+ width: 8px;
+ height: 8px;
+ border-radius: 30px;
+ top: 0;
+ left: 2px
+}
+
+.gg-user::after {
+ width: 12px;
+ height: 9px;
+ border-bottom: 0;
+ border-top-left-radius: 3px;
+ border-top-right-radius: 3px;
+ top: 9px
+} 
+
+```
+De esta manera se consiguio aumentar la velocidad de carga de la pagina , ademas de que se tiene mejor control sobre los iconos y animaciones, se utilizaron tambien en esta seccion las metodologias atomic design para el deseño del menu y sus opciones. Este menu tiene la caracteristica de que se desplaza con los movimientos que haga el usuario por lo que le permite navegar entre secciones de una manera mas sencilla y ordenada.
+
+Footer:
+para el footer se utilizaron tambien metodoligias de estilos css grid para el correcto posisicionamiento en pantalla , ademas se dieño tambien la linea que lleva por defecto en la maqueta inicial , brindando un punto de informacion para el usuario al final
+[![Imagen footer](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/footer-section.PNG "Inmagen footer")](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/footer-section.PNG "Imagen footer")
+
+
 # Atomic design
 
 #### 1.Sección barra de navegación superior
@@ -384,7 +550,6 @@ prevew
 [![code.png](https://i.postimg.cc/CLG6wzgy/code.png)](https://postimg.cc/xcdPRj8g)
 
 ------------
-<<<<<<< HEAD
 
 1.1. buscador:
 
@@ -481,7 +646,6 @@ CSS
 
 [![code.png](https://i.postimg.cc/fTzRvS55/code.png)](https://postimg.cc/5jrJ40hF)
 
-=======
 
 1.1. buscador:
 
@@ -577,4 +741,3 @@ HTML
 CSS
 
 [![code.png](https://i.postimg.cc/fTzRvS55/code.png)](https://postimg.cc/5jrJ40hF)
->>>>>>> readme

@@ -167,13 +167,17 @@ p {
     color:var(--green-darker)
 }
 
+.container-sidebar .sidebar-options i{
+    width: 20px;
+}
+
 .img-buttom{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 160px;
     margin:10px auto;
     text-align: center;
     background: url('../img/sidebar-image.png') center/cover;
@@ -486,13 +490,7 @@ p {
 
         @media screen and (max-width: 1090px) {
             #input-buscador{
-                max-width: 100px;
-            }
-        }
-
-        @media screen and (max-width: 1022px) {
-            #input-buscador{
-                max-width: 100px;
+                max-width: 200px;
             }
         }
 
@@ -932,6 +930,51 @@ p {
     padding: 15px;
     font-size: clamp(1em, 2.5vw, 1.1em);
     filter: var(--filter-cards);
+}
+
+.pencil-container{
+    background-color: #009458;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.pencil{
+    background-color: #ffffff;
+    width: 5.5px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+
+.pencil::after{
+    content: '';
+    width: 4.5px;
+    height: 4.5px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+    bottom: -3px;
+    right: 0.5px;
+    border-radius: 1px;
+}
+
+.pencil::before{
+    content: '';
+    width: 5.5px;
+    height: 4px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: 14px;
+    border-radius: 2px 2px 0 0;
+}
+
+.header-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .profile {
@@ -1548,7 +1591,7 @@ p {
 @media (min-width:450px) {
 
     .module_information .information {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 51% 49%;
     }
     
     .module_information p:first-of-type {

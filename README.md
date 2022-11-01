@@ -375,8 +375,7 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br></aside>
 ```
 Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
-[![]([![](https://github.com/Robin98123/fundaci-n-semillas-dashboard-/blob/main/img/landig-semillas.PNG "Imagen Landing page")](https://github.com/Robin98123/fundaci-n-semillas-dashboard-/blob/main/img/landig-semillas.PNG "Imagen anding page")
-
+[![code.png](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/landig-semillas.PNG)](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/landig-semillas.PNG)
 # fundaci-n-semillas-dashboard-
 Este proyecto contiene un Demo de el dashboard  para la fundación semillas, donde se podrá ver indicadores de las emociones del estudiante y donde encontrará un herramienta estudiantil para sus tareas dentro del campus educativo
 # Atomic design

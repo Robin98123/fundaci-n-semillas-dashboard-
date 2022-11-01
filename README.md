@@ -333,7 +333,7 @@ Está es la documentación de la estructura de los elementos menú lateral y foo
 
 Menu lateral
 Se inicia creado la estructura html , usando metodologías grid para el posterior manejo de responsive
-
+```html
 <aside>
     <div class="container-sidebar">
         <div class="logo">
@@ -373,5 +373,5 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br>
     <br>
     <br></aside>
-
+```
 Para la estructuracion se realizan cambios en css con el fin de realiazar la maqueta fiel al deiseño inicial

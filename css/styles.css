@@ -490,13 +490,7 @@ p {
 
         @media screen and (max-width: 1090px) {
             #input-buscador{
-                max-width: 100px;
-            }
-        }
-
-        @media screen and (max-width: 1022px) {
-            #input-buscador{
-                max-width: 100px;
+                max-width: 200px;
             }
         }
 

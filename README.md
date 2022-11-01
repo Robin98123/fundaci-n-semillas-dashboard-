@@ -331,6 +331,47 @@ Respecto al puntero, este es una composición de un círculo y un triángulo (Cr
 
 Está es la documentación de la estructura de los elementos menú lateral y footer.
 
-#Menu lateral
+Menu lateral
 Se inicia creado la estructura html , usando metodologías grid para el posterior manejo de responsive
 
+<aside>
+    <div class="container-sidebar">
+        <div class="logo">
+            <img src="img/logoSGreen.png" alt="Logo fundación semillas" />
+            <div class="diplomate">
+            <p>Fundación semillas</p>
+            <p>Diplomado Dashboard</p></div>
+        </div>
+        <div class="title-one">
+            <h1>Hola,<span>Tom</span></h1>
+        </div>
+        <div class="img-profile">
+            <img src="img/101_perfil grande.jpg" alt="Imagen de perfil">
+            <p>@Tom.pérez1208</p>
+        </div>
+        <div class="title-two">
+            <span>Menu principal</span>
+        </div>
+        <div class="sidebar">
+            
+<ul class="sidebar-options">
+                <li><i class="gg-microsoft"></i><a href="index.html">DashBoard</a></li>
+                <li><i class="gg-toolbar-bottom"></i>Diplomados</li>
+                <li><i class="gg-user-list"></i>Estudiantes</li>
+                <li><i class="gg-user"></i>Instructores</li>
+                <li><i class="gg-calendar-today"></i>Eventos</li>
+                <li><i class="gg-info"></i>Información</li>
+            </ul>
+        </div>
+        <div class="img-buttom">
+            <img src="" alt="">
+            <button type="submit">Cerrar sesión</button>
+            <span>© Derechos reservados desarrollado por AFR</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br></aside>
+
+Para la estructuracion se realizan cambios en css con el fin de realiazar la maqueta fiel al deiseño inicial

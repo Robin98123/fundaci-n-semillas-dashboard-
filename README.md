@@ -327,7 +327,7 @@ Respecto al puntero, este es una composición de un círculo y un triángulo (Cr
     right: 15px;
 }
 ```
-#Documentacion menú lateral y footer
+# Documentacion menú lateral y footer
 
 Está es la documentación de la estructura de los elementos menú lateral y footer.
 
@@ -375,10 +375,7 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br></aside>
 ```
 Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
-[![](https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")](http://https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")
 
-# fundaci-n-semillas-dashboard-
-Este proyecto contiene un Demo de el dashboard  para la fundación semillas, donde se podrá ver indicadores de las emociones del estudiante y donde encontrará un herramienta estudiantil para sus tareas dentro del campus educativo
 # Atomic design
 
 #### 1.Sección barra de navegación superior

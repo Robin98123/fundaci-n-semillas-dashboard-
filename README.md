@@ -375,7 +375,7 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br></aside>
 ```
 Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
-[![Imagen sidebar](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/landig-semillas.PNG "Inmagen sidebar")](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/landig-semillas.PNG "Imagen sidebar")
+[![Imagen sidebar](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/sidebar-readme.png "Inmagen sidebar")](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/sidebar-readme.png "Imagen sidebar")
 ```css
 .gg-microsoft {
   transform: scale(var(--ggs,1));

@@ -375,7 +375,7 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br></aside>
 ```
 Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
-[![](https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")](http://https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")
+[![]([![](https://github.com/Robin98123/fundaci-n-semillas-dashboard-/blob/main/img/landig-semillas.PNG "Imagen Landing page")](https://github.com/Robin98123/fundaci-n-semillas-dashboard-/blob/main/img/landig-semillas.PNG "Imagen anding page")
 
 # fundaci-n-semillas-dashboard-
 Este proyecto contiene un Demo de el dashboard  para la fundación semillas, donde se podrá ver indicadores de las emociones del estudiante y donde encontrará un herramienta estudiantil para sus tareas dentro del campus educativo
@@ -387,7 +387,6 @@ prevew
 [![code.png](https://i.postimg.cc/CLG6wzgy/code.png)](https://postimg.cc/xcdPRj8g)
 
 ------------
-<<<<<<< HEAD
 
 1.1. buscador:
 
@@ -484,7 +483,6 @@ CSS
 
 [![code.png](https://i.postimg.cc/fTzRvS55/code.png)](https://postimg.cc/5jrJ40hF)
 
-=======
 
 1.1. buscador:
 
@@ -580,4 +578,3 @@ HTML
 CSS
 
 [![code.png](https://i.postimg.cc/fTzRvS55/code.png)](https://postimg.cc/5jrJ40hF)
->>>>>>> readme

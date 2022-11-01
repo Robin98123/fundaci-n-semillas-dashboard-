@@ -374,4 +374,5 @@ Se inicia creado la estructura html , usando metodologías grid para el posterio
     <br>
     <br></aside>
 ```
-Para la estructuracion se realizan cambios en css con el fin de realiazar la maqueta fiel al deiseño inicial
+Para la estructuracion se realizan cambios en css con el fin de realizar la maqueta fiel al deiseño inicial, adicionalmente se diseñaron los iconos usados con css puro para aumentar la optimizacion de la pagina.
+[![](https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")](http://https://i.postimg.cc/fLwJkv7K/Group-232.png "Indicador de riesgos")

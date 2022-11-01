@@ -2973,18 +2973,21 @@ top: 2133px;
  } 
  @media screen and (max-width: 480px) {
 
-    .footer{
-        display: block;
-        
-        position: absolute;
-width: 10%;
+ .footer{
+display:block;
+position: absolute;
+width: 100%;
 height: 70px;
-left: 374px;
-top: 3550px;
+left: 0px;
+top: 3540px;
     }
-    .footer .container-footer {
+    .footer  .container-footer{
         display: grid;
-        grid-template-columns: none;
+        grid-template-columns: 33% 33%;
+        grid-template-rows: 33% 33%;
     }
-    
+    icons-footer{
+    color: #009458;
+    grid-column: 33% 66%;
+}
 }

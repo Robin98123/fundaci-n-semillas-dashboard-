@@ -327,3 +327,10 @@ Respecto al puntero, este es una composición de un círculo y un triángulo (Cr
     right: 15px;
 }
 ```
+#Documentacion menú lateral y footer
+
+Está es la documentación de la estructura de los elementos menú lateral y footer.
+
+#Menu lateral
+Se inicia creado la estructura html , usando metodologías grid para el posterior manejo de responsive
+

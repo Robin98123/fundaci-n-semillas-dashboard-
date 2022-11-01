@@ -27,8 +27,11 @@
     box-sizing: border-box;
 }
 
-body {
+body{
+    overflow-x: hidden;
+
     background: var(--body-color);
+    
 }
 
 h1,
@@ -170,8 +173,8 @@ p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 150px;
-    margin:20px auto;
+    height: 100px;
+    margin:10px auto;
     text-align: center;
     background: url('../img/sidebar-image.png') center/cover;
 }
@@ -2805,7 +2808,10 @@ top: 2133px;
 }
 .footer .container-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 0.3fr 0.8fr;
+}
+.icons-footer{
+    color: #009458;
 }
 .gg-facebook {
   box-sizing: border-box;
@@ -2922,3 +2928,10 @@ top: 2133px;
   top: 2px;
   box-shadow: 7px 4px 0,7px 12px 0
  } 
+ @media screen and (max-width: 480px) {
+
+    .footer{
+        display: none;
+    }
+    
+}

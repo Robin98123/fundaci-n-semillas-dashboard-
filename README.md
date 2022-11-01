@@ -534,11 +534,11 @@ Para la estructuracion se realizan cambios en css con el fin de realizar la maqu
 } 
 
 ```
-De esta manera se consiguio aumentar la velocidad de carga de la pagina , ademas de que se tiene mejor control sobre los iconos y animaciones, se utilizaron tambien en esta seccion las metodologias atomic design para el deseño del menu y sus opciones.
+De esta manera se consiguio aumentar la velocidad de carga de la pagina , ademas de que se tiene mejor control sobre los iconos y animaciones, se utilizaron tambien en esta seccion las metodologias atomic design para el deseño del menu y sus opciones. Este menu tiene la caracteristica de que se desplaza con los movimientos que haga el usuario por lo que le permite navegar entre secciones de una manera mas sencilla y ordenada.
 
 Footer:
-
-para el footer se utilizaron tambien metodoligias de estilos css grid para el correcto posisicionamiento en pantalla , ademas se dieño tambien la linea que lleva por defecto en la maqueta inicial , 
+para el footer se utilizaron tambien metodoligias de estilos css grid para el correcto posisicionamiento en pantalla , ademas se dieño tambien la linea que lleva por defecto en la maqueta inicial , brindando un punto de informacion para el usuario al final
+[![Imagen footer](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/footer-section.PNG "Inmagen footer")](https://raw.githubusercontent.com/Robin98123/fundaci-n-semillas-dashboard-/main/img/footer-section.PNG "Imagen footer")
 # fundaci-n-semillas-dashboard-
 Este proyecto contiene un Demo de el dashboard  para la fundación semillas, donde se podrá ver indicadores de las emociones del estudiante y donde encontrará un herramienta estudiantil para sus tareas dentro del campus educativo
 # Atomic design

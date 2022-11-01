@@ -2931,7 +2931,17 @@ top: 2133px;
  @media screen and (max-width: 480px) {
 
     .footer{
-        display: none;
+        display: block;
+        
+        position: absolute;
+width: 10%;
+height: 70px;
+left: 374px;
+top: 3550px;
+    }
+    .footer .container-footer {
+        display: grid;
+        grid-template-columns: none;
     }
     
 }

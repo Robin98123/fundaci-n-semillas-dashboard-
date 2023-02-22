@@ -1,6 +1,10 @@
 # Fundación semillas (Dashboard)
 Este proyecto contiene un Demo (MVP) del dashboard para la fundación semillas, enfocándose primordialmente en la salud emocional de los estudiantes, para lo cual se encontrarán indicadores emocionales de los mismos; siendo además de eso, una herramienta completa de visualización general del status del alumno, considerando cada una de sus actividades modulares para cada diplomado.
 
+Presentación del proyecto
+
+https://issuu.com/robinsonrincon/docs/presentacion_del_proyecto
+
 [![Semillas dashboard Demo](https://i.postimg.cc/SRqqZwn6/Group-231.png "Semillas dashboard Demo")](http://https://i.postimg.cc/SRqqZwn6/Group-231.png "Semillas dashboard Demo")
 
 # Estructura del código
